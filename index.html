@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Websites That Book Installs | QuoteLeads</title>
+<meta name="description" content="Premium solar installer websites and funnels engineered from thousands of real solar campaigns. Built by QuoteLeads — the team generating solar leads at scale across Australia.">
+<link rel="canonical" href="https://quoteleads.com.au/solar-websites">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://quoteleads.com.au/solar-websites">
+<meta property="og:title" content="Solar Websites That Book Installs | QuoteLeads">
+<meta property="og:description" content="Premium solar installer websites and funnels engineered from thousands of real solar campaigns by QuoteLeads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   CORE TOKENS
+   ============================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  /* surfaces */
+  --void:#050507;
+  --deep:#08080C;
+  --surf:#0C0C14;
+  --pane:rgba(255,255,255,0.035);
+  --pane2:rgba(255,255,255,0.06);
+  --pane3:rgba(255,255,255,0.09);
+  --rim:rgba(255,255,255,0.09);
+  --rim2:rgba(255,255,255,0.14);
+  --rim-top:rgba(255,255,255,0.22);
+  /* accents */
+  --blue:#4797FF;
+  --blue-2:#7CB9FF;
+  --blue-mist:#B8D4FF;
+  --blue-dim:rgba(71,151,255,0.12);
+  --blue-rim:rgba(71,151,255,0.3);
+  --gold:#F5B544;
+  --gold-2:#FFC96B;
+  --gold-soft:#FFD88C;
+  --gold-dim:rgba(245,181,68,0.12);
+  --gold-rim:rgba(245,181,68,0.32);
+  --red:#F87171;
+  --green:#34D399;
+  /* text */
+  --white:#F5F5F7;
+  --off:#D4D4D8;
+  --muted:#8E8E96;
+  --dim:#5A5A63;
+  --faint:#2E2E36;
+  /* type */
+  --display:'Fraunces','Times New Roman',serif;
+  --sans:'General Sans','Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --nh:72px;
+}
+html{scroll-behavior:smooth;overflow-x:hidden;background:var(--void)}
+body{
+  background:var(--void);
+  color:var(--white);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  font-feature-settings:'ss01','cv11';
+  cursor:none;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:none;border:none;background:none;color:inherit}
+
+/* ============================================
+   ATMOSPHERE — background layers
+   ============================================ */
+.bg-mesh{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 10%, rgba(71,151,255,0.08), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 20% 30%, rgba(245,181,68,0.04), transparent 65%),
+    radial-gradient(ellipse 90% 70% at 50% 100%, rgba(71,151,255,0.05), transparent 70%);
+}
+.bg-grid{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.35;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+}
+.bg-grain{
+  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0.4;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size:220px;
+}
+#particles{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0.55}
+
+/* Custom cursor */
+#cur{position:fixed;width:6px;height:6px;background:var(--blue);border-radius:50%;
+  pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .2s,height .2s,background .2s;mix-blend-mode:screen}
+#curR{position:fixed;width:36px;height:36px;border:1px solid rgba(71,151,255,0.4);border-radius:50%;
+  pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s}
+body.hov #cur{width:14px;height:14px;background:var(--gold)}
+body.hov #curR{width:60px;height:60px;border-color:rgba(245,181,68,0.6)}
+
+/* Scroll progress */
+.scroll-prog{position:fixed;top:0;left:0;right:0;height:1.5px;z-index:500;
+  transform-origin:left center;transform:scaleX(0);
+  background:linear-gradient(90deg,var(--blue),var(--gold))}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  padding:0 32px;
+  background:rgba(5,5,7,0);
+  border-bottom:1px solid transparent;
+  transition:background .4s,border-color .4s,backdrop-filter .4s;
+}
+.site-header.sc{
+  background:rgba(5,5,7,0.78);
+  backdrop-filter:blur(24px) saturate(1.4);
+  -webkit-backdrop-filter:blur(24px) saturate(1.4);
+  border-bottom-color:var(--rim);
+}
+.header-inner{
+  max-width:1280px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  height:var(--nh);
+}
+.logo{
+  display:flex;align-items:center;gap:14px;
+  color:var(--white);
+}
+.logo img{
+  height:30px;width:auto;display:block;
+  opacity:0.95;
+}
+.logo-tag{
+  display:inline-block;
+  padding-left:14px;
+  border-left:1px solid var(--rim2);
+  font-family:var(--mono);font-size:0.68rem;
+  color:var(--gold-soft);
+  letter-spacing:0.16em;text-transform:uppercase;
+  font-weight:500;
+}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{
+  font-size:0.84rem;font-weight:400;color:var(--muted);
+  letter-spacing:0.01em;transition:color .2s;
+}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--white);color:var(--void);
+  font-family:var(--sans);font-size:0.84rem;font-weight:500;
+  padding:10px 18px 10px 20px;border-radius:100px;
+  transition:all .2s;
+  box-shadow:0 1px 0 rgba(255,255,255,0.4) inset, 0 8px 20px rgba(0,0,0,0.25);
+}
+.nav-cta:hover{background:var(--gold);transform:translateY(-1px)}
+.nav-cta svg{width:12px;height:12px}
+.mob-btn{display:none;padding:6px;flex-direction:column;gap:5px}
+.mob-btn span{display:block;width:22px;height:1.5px;background:var(--white);transition:.3s}
+.mob-menu{
+  display:none;position:absolute;top:100%;left:0;right:0;
+  background:rgba(5,5,7,0.96);backdrop-filter:blur(28px);
+  border-bottom:1px solid var(--rim);padding:8px 32px 20px;
+}
+.mob-menu.open{display:flex;flex-direction:column}
+.mob-menu a{
+  padding:14px 0;font-size:1rem;color:var(--off);
+  border-bottom:1px solid var(--rim);
+}
+.mob-menu .mob-cta{
+  background:var(--white);color:var(--void);
+  padding:14px;border-radius:8px;text-align:center;margin-top:14px;
+  border-bottom:none;font-weight:500;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero{
+  position:relative;z-index:3;
+  padding:calc(var(--nh) + 80px) 32px 120px;
+  max-width:1280px;margin:0 auto;
+  min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;
+}
+.hero-ambi{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:-1}
+.ha1{width:620px;height:620px;background:rgba(71,151,255,0.09);right:-10%;top:10%}
+.ha2{width:420px;height:420px;background:rgba(245,181,68,0.06);left:-8%;top:30%}
+.ha3{width:300px;height:300px;background:rgba(71,151,255,0.05);left:45%;bottom:5%}
+
+.hbadge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--pane2);border:1px solid var(--rim2);
+  padding:6px 14px 6px 10px;border-radius:100px;
+  font-family:var(--mono);font-size:0.7rem;font-weight:500;
+  letter-spacing:0.06em;text-transform:uppercase;color:var(--off);
+  margin-bottom:40px;
+  backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+  animation:fadeUp .8s ease both;
+}
+.bpulse{
+  width:6px;height:6px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 0 0 rgba(245,181,68,0.6);
+  animation:pulse 2s ease infinite;
+}
+.hbadge b{color:var(--white);font-weight:600}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(245,181,68,0.7)}
+  70%{box-shadow:0 0 0 8px rgba(245,181,68,0)}
+  100%{box-shadow:0 0 0 0 rgba(245,181,68,0)}
+}
+
+.hero h1{
+  font-family:var(--display);
+  font-weight:500;
+  font-size:clamp(2.4rem,7.5vw,5.4rem);
+  line-height:1.02;
+  letter-spacing:-0.035em;
+  margin-bottom:28px;
+  animation:fadeUp .8s .1s ease both;
+  max-width:980px;
+  font-variation-settings:'opsz' 144;
+}
+.hero h1 em{
+  font-style:italic;font-weight:400;
+  background:linear-gradient(100deg,var(--gold-soft) 0%,var(--gold) 40%,var(--blue-2) 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-variation-settings:'opsz' 12;
+}
+.hero-sub{
+  font-size:1.1rem;
+  color:var(--muted);line-height:1.7;
+  max-width:640px;margin:0 auto 44px;
+  animation:fadeUp .8s .18s ease both;
+}
+.hero-sub b{color:var(--off);font-weight:500}
+
+.hbtns{
+  display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;
+  animation:fadeUp .8s .26s ease both;
+}
+.btn-prim{
+  position:relative;display:inline-flex;align-items:center;gap:10px;
+  background:var(--white);color:var(--void);
+  font-size:0.9rem;font-weight:500;letter-spacing:-0.005em;
+  padding:14px 26px;border-radius:100px;
+  transition:all .25s;overflow:hidden;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.6), 0 12px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.05);
+}
+.btn-prim::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at var(--bx,50%) var(--by,50%),rgba(245,181,68,0.4),transparent 60%);
+  opacity:0;transition:opacity .3s;
+}
+.btn-prim:hover{background:var(--gold-soft);transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,0.6), 0 16px 40px rgba(245,181,68,0.3)}
+.btn-prim:hover::before{opacity:1}
+.btn-prim svg{width:14px;height:14px;transition:transform .25s;position:relative;z-index:2}
+.btn-prim:hover svg{transform:translateX(3px)}
+
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--pane);border:1px solid var(--rim);
+  color:var(--off);font-size:0.9rem;font-weight:400;
+  padding:13px 22px;border-radius:100px;
+  transition:all .25s;
+  backdrop-filter:blur(10px);
+}
+.btn-ghost:hover{border-color:var(--rim2);color:var(--white);background:var(--pane2)}
+.btn-ghost .dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+
+.hero-meta{
+  margin-top:44px;
+  display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;
+  animation:fadeUp .8s .34s ease both;
+}
+.hero-meta-item{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:0.72rem;
+  letter-spacing:0.04em;color:var(--dim);
+  text-transform:uppercase;
+}
+.hero-meta-item::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--dim)}
+.hero-meta-item:first-child::before{display:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+/* ============================================
+   HERO MOCKUP — the floating glass preview
+   ============================================ */
+.hero-mockup{
+  position:relative;
+  width:100%;max-width:1040px;
+  margin:80px auto 0;
+  animation:fadeUp 1s .4s ease both;
+  perspective:1800px;
+}
+.mockup-frame{
+  position:relative;
+  background:linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));
+  border:1px solid var(--rim2);
+  border-radius:16px;
+  padding:10px;
+  box-shadow:
+    inset 0 1px 0 var(--rim-top),
+    0 40px 80px -20px rgba(0,0,0,0.6),
+    0 20px 40px -10px rgba(71,151,255,0.12),
+    0 0 0 1px rgba(255,255,255,0.03);
+  backdrop-filter:blur(20px);
+  transform:rotateX(6deg) scale(0.98);
+  transform-origin:center top;
+}
+.mockup-frame::before{
+  content:'';position:absolute;top:-1px;left:10%;right:10%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);
+}
+.mockup-bar{
+  display:flex;align-items:center;gap:8px;
+  padding:10px 14px 12px;
+}
+.mockup-dot{width:10px;height:10px;border-radius:50%;background:var(--faint)}
+.mockup-dot.r{background:#FF5F57}
+.mockup-dot.y{background:#FEBC2E}
+.mockup-dot.g{background:#28C840}
+.mockup-url{
+  flex:1;margin:0 20px;padding:6px 14px;
+  background:rgba(0,0,0,0.4);border:1px solid var(--rim);
+  border-radius:6px;
+  font-family:var(--mono);font-size:0.68rem;color:var(--muted);
+  display:flex;align-items:center;gap:8px;
+}
+.mockup-url::before{
+  content:'';width:10px;height:10px;border-radius:50%;
+  border:1.5px solid var(--green);border-bottom-color:transparent;
+}
+.mockup-body{
+  background:linear-gradient(180deg,#0A0A14,#06060C);
+  border:1px solid var(--rim);border-top-width:1px;
+  border-radius:8px;
+  overflow:hidden;
+  position:relative;
+  min-height:460px;
+}
+
+/* Mockup content — fake solar installer site */
+.mk-nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 28px;border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.mk-logo{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:600;font-size:0.95rem}
+.mk-logo-mark{
+  width:22px;height:22px;border-radius:5px;
+  background:linear-gradient(135deg,var(--gold),#F97316);
+  position:relative;
+}
+.mk-logo-mark::after{
+  content:'';position:absolute;inset:5px;border-radius:2px;background:var(--void);
+}
+.mk-nav-links{display:flex;gap:22px;font-size:0.72rem;color:var(--muted)}
+.mk-nav-cta{
+  font-size:0.7rem;padding:6px 14px;border-radius:100px;
+  background:var(--gold);color:var(--void);font-weight:600;
+}
+.mk-hero{
+  display:grid;grid-template-columns:1.3fr 1fr;gap:32px;
+  padding:40px 28px 32px;align-items:center;
+}
+.mk-hero-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold-dim);border:1px solid var(--gold-rim);
+  padding:4px 10px;border-radius:100px;
+  font-family:var(--mono);font-size:0.6rem;color:var(--gold-soft);
+  letter-spacing:0.06em;text-transform:uppercase;
+  margin-bottom:14px;
+}
+.mk-hero h3{
+  font-family:var(--display);font-weight:500;font-size:1.6rem;
+  line-height:1.05;letter-spacing:-0.025em;
+  margin-bottom:10px;
+}
+.mk-hero h3 em{
+  font-style:italic;font-weight:400;color:var(--gold-soft);
+}
+.mk-hero p{font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:18px}
+.mk-hero-ctas{display:flex;gap:8px}
+.mk-btn{
+  font-size:0.7rem;padding:9px 16px;border-radius:6px;font-weight:500;
+}
+.mk-btn-prim{background:var(--gold);color:var(--void)}
+.mk-btn-sec{background:var(--pane2);border:1px solid var(--rim);color:var(--off)}
+
+/* Calculator widget in mockup */
+.mk-calc{
+  background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);border-radius:10px;
+  padding:18px;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.mk-calc-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:14px;
+}
+.mk-calc-title{font-size:0.75rem;font-weight:500}
+.mk-calc-pill{
+  font-family:var(--mono);font-size:0.56rem;
+  background:var(--blue-dim);color:var(--blue-2);
+  padding:2px 8px;border-radius:100px;border:1px solid var(--blue-rim);
+  letter-spacing:0.06em;text-transform:uppercase;
+}
+.mk-calc-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:8px 10px;margin-bottom:6px;
+  background:rgba(0,0,0,0.3);border-radius:6px;border:1px solid var(--rim);
+  font-size:0.68rem;
+}
+.mk-calc-row span:first-child{color:var(--muted)}
+.mk-calc-row span:last-child{color:var(--white);font-family:var(--mono);font-weight:500}
+.mk-calc-result{
+  margin-top:12px;padding:14px;border-radius:8px;
+  background:linear-gradient(135deg,var(--gold-dim),var(--blue-dim));
+  border:1px solid var(--gold-rim);
+  text-align:center;
+}
+.mk-calc-result-label{font-size:0.58rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--off);margin-bottom:4px}
+.mk-calc-result-val{
+  font-family:var(--display);font-weight:600;font-size:1.35rem;
+  background:linear-gradient(90deg,var(--gold-soft),var(--blue-mist));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  letter-spacing:-0.02em;
+}
+.mk-trust{
+  border-top:1px solid rgba(255,255,255,0.05);
+  padding:14px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  font-family:var(--mono);font-size:0.6rem;color:var(--dim);
+  letter-spacing:0.05em;text-transform:uppercase;
+}
+.mk-trust-item{display:flex;align-items:center;gap:6px}
+.mk-trust-item::before{content:'';width:3px;height:3px;border-radius:50%;background:var(--green)}
+
+/* Floating badges on the mockup */
+.mk-float{
+  position:absolute;
+  background:rgba(10,10,16,0.85);
+  border:1px solid var(--rim2);
+  border-radius:10px;padding:10px 14px;
+  backdrop-filter:blur(14px);
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 20px 40px -10px rgba(0,0,0,0.6);
+  font-family:var(--mono);font-size:0.66rem;
+  display:flex;align-items:center;gap:10px;
+  animation:float 4s ease-in-out infinite;
+}
+.mk-float.f1{
+  top:18%;right:-4%;
+  animation-delay:0s;
+}
+.mk-float.f2{
+  bottom:22%;left:-5%;
+  animation-delay:1.5s;
+}
+.mk-float-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--green);box-shadow:0 0 8px var(--green);
+}
+.mk-float.f2 .mk-float-dot{background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.mk-float-k{color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;font-size:0.6rem}
+.mk-float-v{color:var(--white);font-weight:600}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* ============================================
+   MARQUEE
+   ============================================ */
+.marquee{
+  position:relative;z-index:3;
+  border-top:1px solid var(--rim);border-bottom:1px solid var(--rim);
+  background:var(--deep);padding:16px 0;overflow:hidden;
+  mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
+}
+.m-track{display:flex;width:max-content;animation:mq 38s linear infinite}
+.m-item{
+  display:flex;align-items:center;gap:14px;padding:0 36px;
+  font-family:var(--mono);font-size:0.72rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);
+  white-space:nowrap;transition:color .2s;
+}
+.m-item:hover{color:var(--gold-soft)}
+.m-sep{width:5px;height:5px;border-radius:50%;background:var(--blue);opacity:0.6}
+.m-sep.gold{background:var(--gold)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+section{
+  position:relative;z-index:3;
+  padding:140px 32px;
+  border-top:1px solid var(--rim);
+}
+.si{max-width:1280px;margin:0 auto}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:0.72rem;font-weight:500;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-soft);
+  margin-bottom:20px;
+}
+.eyebrow::before{
+  content:'';width:28px;height:1px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+.eyebrow.blue{color:var(--blue-2)}
+.eyebrow.blue::before{background:linear-gradient(90deg,var(--blue),transparent)}
+
+.stitle{
+  font-family:var(--display);font-weight:500;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1.05;letter-spacing:-0.03em;
+  max-width:820px;
+  font-variation-settings:'opsz' 80;
+}
+.stitle em{
+  font-style:italic;font-weight:400;
+  background:linear-gradient(95deg,var(--gold-soft),var(--blue-mist));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-variation-settings:'opsz' 12;
+}
+.sub-stitle{
+  margin-top:18px;font-size:1.05rem;color:var(--muted);
+  line-height:1.7;max-width:620px;
+}
+
+/* ============================================
+   STATS STRIP
+   ============================================ */
+.stats{
+  position:relative;z-index:3;
+  background:var(--deep);
+  border-top:1px solid var(--rim);border-bottom:1px solid var(--rim);
+}
+.stats-row{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  max-width:1280px;margin:0 auto;
+}
+.stat{
+  padding:48px 36px;
+  border-right:1px solid var(--rim);
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.stat:last-child{border-right:none}
+.stat::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--blue),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.stat:hover{background:var(--pane)}
+.stat:hover::before{opacity:1}
+.stat.gold::before{background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.stn{
+  display:block;
+  font-family:var(--display);font-weight:500;
+  font-size:clamp(2.4rem,3.6vw,3.6rem);
+  line-height:1;letter-spacing:-0.035em;
+  margin-bottom:12px;
+  background:linear-gradient(180deg,var(--white) 20%,var(--muted) 130%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-variation-settings:'opsz' 144;
+}
+.stat.gold .stn{
+  background:linear-gradient(180deg,var(--gold-soft) 20%,var(--gold) 130%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.stn-unit{
+  font-family:var(--mono);font-size:0.6em;font-weight:500;
+  color:var(--muted);margin-left:4px;letter-spacing:-0.02em;
+  -webkit-text-fill-color:var(--muted);
+}
+.stl{color:var(--muted);font-size:0.82rem;line-height:1.6;max-width:200px}
+.stl b{color:var(--white);font-weight:500;display:block;margin-bottom:4px;font-size:0.9rem}
+.stl-note{
+  font-family:var(--mono);font-size:0.6rem;letter-spacing:0.05em;
+  color:var(--dim);text-transform:uppercase;margin-top:8px;
+}
+
+/* ============================================
+   PROBLEM / SOLUTION
+   ============================================ */
+.ps-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  margin-top:56px;
+}
+.ps-col{
+  position:relative;
+  background:linear-gradient(160deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:20px;
+  padding:40px;
+  backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.ps-col.bad{
+  background:linear-gradient(160deg,rgba(248,113,113,0.06),rgba(248,113,113,0.01));
+  border-color:rgba(248,113,113,0.18);
+}
+.ps-col.good{
+  background:linear-gradient(160deg,rgba(52,211,153,0.06),rgba(52,211,153,0.01));
+  border-color:rgba(52,211,153,0.18);
+}
+.ps-head{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:0.72rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.ps-col.bad .ps-head{color:var(--red)}
+.ps-col.good .ps-head{color:var(--green)}
+.ps-col h3{
+  font-family:var(--display);font-weight:500;font-size:1.5rem;
+  letter-spacing:-0.02em;margin-bottom:28px;color:var(--white);
+}
+.ps-list{list-style:none;display:flex;flex-direction:column;gap:16px}
+.ps-item{
+  display:flex;align-items:flex-start;gap:14px;
+  font-size:0.92rem;color:var(--off);line-height:1.6;
+}
+.ps-icon{
+  width:22px;height:22px;border-radius:50%;flex-shrink:0;margin-top:1px;
+  display:flex;align-items:center;justify-content:center;
+}
+.bad .ps-icon{background:rgba(248,113,113,0.15);color:var(--red)}
+.good .ps-icon{background:rgba(52,211,153,0.15);color:var(--green)}
+.ps-item b{color:var(--white);font-weight:500}
+
+/* ============================================
+   ADVANTAGE — 3 cards
+   ============================================ */
+.adv-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  margin-top:60px;
+}
+.adv-card{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:20px;
+  padding:32px 28px 28px;
+  backdrop-filter:blur(14px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+  transition:transform .4s,border-color .4s,box-shadow .4s;
+}
+.adv-card::before{
+  content:'';position:absolute;inset:0;border-radius:20px;
+  background:radial-gradient(circle at 50% -20%,rgba(71,151,255,0.08),transparent 55%);
+  opacity:0;transition:opacity .4s;pointer-events:none;
+}
+.adv-card.gold::before{background:radial-gradient(circle at 50% -20%,rgba(245,181,68,0.1),transparent 55%)}
+.adv-card:hover{transform:translateY(-4px);border-color:var(--rim2);
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 30px 60px -20px rgba(0,0,0,0.5), 0 0 40px -10px rgba(71,151,255,0.1);
+}
+.adv-card.gold:hover{box-shadow:inset 0 1px 0 var(--rim-top), 0 30px 60px -20px rgba(0,0,0,0.5), 0 0 40px -10px rgba(245,181,68,0.12)}
+.adv-card:hover::before{opacity:1}
+.adv-num{
+  font-family:var(--mono);font-size:0.68rem;font-weight:500;
+  letter-spacing:0.12em;color:var(--dim);
+  margin-bottom:28px;
+}
+.adv-icon{
+  width:44px;height:44px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--blue-dim);border:1px solid var(--blue-rim);
+  margin-bottom:22px;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.adv-card.gold .adv-icon{background:var(--gold-dim);border-color:var(--gold-rim)}
+.adv-icon svg{width:20px;height:20px;stroke:var(--blue-2);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.adv-card.gold .adv-icon svg{stroke:var(--gold-soft)}
+.adv-title{
+  font-family:var(--display);font-weight:500;font-size:1.2rem;
+  letter-spacing:-0.015em;line-height:1.2;margin-bottom:12px;
+}
+.adv-desc{font-size:0.9rem;color:var(--muted);line-height:1.7}
+.adv-desc b{color:var(--off);font-weight:500}
+.adv-placeholder{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:18px;padding:6px 12px;
+  background:var(--pane);border:1px dashed var(--rim2);
+  border-radius:6px;
+  font-family:var(--mono);font-size:0.66rem;color:var(--dim);
+  letter-spacing:0.04em;
+}
+.adv-placeholder::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--dim)}
+
+/* ============================================
+   BENTO — what's built
+   ============================================ */
+.bento{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:minmax(200px,auto);
+  gap:16px;
+  margin-top:60px;
+}
+.b-card{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:20px;
+  padding:28px;
+  backdrop-filter:blur(14px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+  display:flex;flex-direction:column;justify-content:space-between;
+  transition:transform .35s,border-color .35s;
+}
+.b-card:hover{transform:translateY(-3px);border-color:var(--rim2)}
+.b-card::after{
+  content:'';position:absolute;top:0;left:20%;right:20%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--rim2),transparent);
+  opacity:0.7;
+}
+.b-wide{grid-column:span 2}
+.b-tall{grid-row:span 2}
+.b-hero{grid-column:span 2;grid-row:span 2}
+
+.b-tag{
+  font-family:var(--mono);font-size:0.64rem;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);
+  margin-bottom:14px;
+}
+.b-ic{
+  width:36px;height:36px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--pane2);border:1px solid var(--rim);
+  margin-bottom:18px;
+}
+.b-ic svg{width:18px;height:18px;stroke:var(--off);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.b-ic.blue{background:var(--blue-dim);border-color:var(--blue-rim)}
+.b-ic.blue svg{stroke:var(--blue-2)}
+.b-ic.gold{background:var(--gold-dim);border-color:var(--gold-rim)}
+.b-ic.gold svg{stroke:var(--gold-soft)}
+.b-title{
+  font-family:var(--display);font-weight:500;font-size:1.15rem;
+  letter-spacing:-0.015em;line-height:1.25;margin-bottom:8px;
+}
+.b-hero .b-title{font-size:1.8rem;line-height:1.1}
+.b-desc{font-size:0.85rem;color:var(--muted);line-height:1.65}
+
+/* Hero bento card — visual flourish */
+.b-hero-visual{
+  flex:1;margin-top:22px;
+  position:relative;border-radius:14px;
+  background:
+    radial-gradient(ellipse at 30% 30%,rgba(245,181,68,0.12),transparent 60%),
+    radial-gradient(ellipse at 70% 70%,rgba(71,151,255,0.12),transparent 60%),
+    linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  min-height:160px;
+  overflow:hidden;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.b-hero-visual::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);
+  background-size:24px 24px;
+}
+.b-chart{
+  position:absolute;inset:24px;
+  display:flex;align-items:flex-end;gap:6px;
+}
+.b-bar{
+  flex:1;
+  background:linear-gradient(180deg,var(--blue-2),var(--blue));
+  border-radius:4px 4px 0 0;
+  position:relative;
+  animation:barrise 1.2s ease both;
+}
+.b-bar::after{
+  content:'';position:absolute;top:-4px;left:0;right:0;height:2px;
+  background:var(--gold);border-radius:2px;
+  box-shadow:0 0 8px var(--gold);opacity:0.8;
+}
+.b-bar:nth-child(1){height:38%;animation-delay:0s}
+.b-bar:nth-child(2){height:55%;animation-delay:.1s}
+.b-bar:nth-child(3){height:42%;animation-delay:.15s}
+.b-bar:nth-child(4){height:72%;animation-delay:.2s}
+.b-bar:nth-child(5){height:60%;animation-delay:.25s}
+.b-bar:nth-child(6){height:85%;animation-delay:.3s}
+.b-bar:nth-child(7){height:78%;animation-delay:.35s}
+.b-bar:nth-child(8){height:95%;animation-delay:.4s;background:linear-gradient(180deg,var(--gold-soft),var(--gold))}
+@keyframes barrise{from{transform:scaleY(0);opacity:0;transform-origin:bottom}to{transform:scaleY(1);opacity:1;transform-origin:bottom}}
+
+/* Small mockup visual for some cards */
+.b-mini-calc{
+  margin-top:16px;padding:10px 12px;
+  background:rgba(0,0,0,0.35);border:1px solid var(--rim);
+  border-radius:8px;
+}
+.b-mini-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:4px 0;font-size:0.7rem;
+}
+.b-mini-row span:first-child{color:var(--muted);font-family:var(--mono);font-size:0.64rem;letter-spacing:0.04em;text-transform:uppercase}
+.b-mini-row span:last-child{color:var(--white);font-family:var(--mono);font-weight:500;font-size:0.7rem}
+.b-mini-row.tot span:last-child{color:var(--gold-soft);font-size:0.82rem}
+.b-mini-row.tot{border-top:1px solid var(--rim);padding-top:6px;margin-top:4px}
+
+/* ============================================
+   PACKAGES
+   ============================================ */
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:60px}
+.pkg-card{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:22px;
+  padding:40px 32px 32px;
+  backdrop-filter:blur(14px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+  display:flex;flex-direction:column;
+  transition:transform .4s,border-color .4s,box-shadow .4s;
+}
+.pkg-card::before{
+  content:'';position:absolute;inset:0;border-radius:22px;
+  background:radial-gradient(circle at 50% -20%,rgba(71,151,255,0.1),transparent 55%);
+  opacity:0;transition:opacity .4s;pointer-events:none;
+}
+.pkg-card:hover{transform:translateY(-4px);border-color:var(--rim2);
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 40px 80px -20px rgba(0,0,0,0.6);
+}
+.pkg-card:hover::before{opacity:1}
+.pkg-card.featured{
+  border-color:var(--gold-rim);
+  background:linear-gradient(180deg,rgba(245,181,68,0.08),rgba(245,181,68,0.01));
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 60px -20px rgba(245,181,68,0.3);
+}
+.pkg-card.featured::before{background:radial-gradient(circle at 50% -20%,rgba(245,181,68,0.15),transparent 55%);opacity:1}
+.pkg-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.pkg-num{
+  font-family:var(--mono);font-size:0.66rem;font-weight:500;
+  letter-spacing:0.12em;color:var(--dim);
+}
+.pkg-pop{
+  font-family:var(--mono);font-size:0.6rem;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-soft);
+  background:var(--gold-dim);border:1px solid var(--gold-rim);
+  padding:3px 10px;border-radius:100px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.pkg-name{
+  font-family:var(--display);font-weight:500;font-size:1.4rem;
+  letter-spacing:-0.02em;margin-bottom:8px;
+}
+.pkg-name em{font-style:italic;font-weight:400;color:var(--gold-soft)}
+.pkg-desc{font-size:0.85rem;color:var(--muted);margin-bottom:24px;line-height:1.55}
+.pkg-price{
+  display:flex;align-items:baseline;gap:6px;
+  font-family:var(--display);font-weight:500;
+  margin-bottom:4px;letter-spacing:-0.03em;
+}
+.pkg-price-curr{font-size:1.1rem;color:var(--muted);font-weight:400}
+.pkg-price-val{font-size:3rem;line-height:1;color:var(--white)}
+.pkg-price-custom{font-size:2rem;line-height:1;color:var(--white);font-style:italic;font-weight:400}
+.pkg-price-note{font-family:var(--mono);font-size:0.7rem;color:var(--dim);letter-spacing:0.04em;margin-bottom:28px}
+.pkg-divider{border:none;border-top:1px dashed var(--rim);margin:0 0 22px}
+.pkg-list{list-style:none;display:flex;flex-direction:column;gap:12px;flex:1;margin-bottom:28px}
+.pkg-item{display:flex;align-items:flex-start;gap:12px;font-size:0.88rem;color:var(--off);line-height:1.55}
+.pkg-item b{color:var(--white);font-weight:500}
+.pkg-check{
+  width:18px;height:18px;border-radius:50%;flex-shrink:0;margin-top:1px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--blue-dim);border:1px solid var(--blue-rim);
+}
+.pkg-check svg{width:10px;height:10px;stroke:var(--blue-2);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.pkg-card.featured .pkg-check{background:var(--gold-dim);border-color:var(--gold-rim)}
+.pkg-card.featured .pkg-check svg{stroke:var(--gold-soft)}
+.pkg-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px;border-radius:100px;
+  font-size:0.88rem;font-weight:500;
+  background:var(--pane2);border:1px solid var(--rim2);color:var(--white);
+  transition:all .25s;
+}
+.pkg-btn:hover{background:var(--pane3);border-color:var(--rim-top)}
+.pkg-card.featured .pkg-btn{
+  background:var(--white);color:var(--void);border-color:transparent;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.6), 0 10px 28px rgba(245,181,68,0.25);
+}
+.pkg-card.featured .pkg-btn:hover{background:var(--gold-soft)}
+.pkg-btn svg{width:12px;height:12px;transition:transform .2s}
+.pkg-btn:hover svg{transform:translateX(3px)}
+
+.pkg-note{
+  margin-top:40px;padding:22px 28px;
+  background:var(--pane);border:1px solid var(--rim);
+  border-radius:14px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  font-size:0.88rem;color:var(--muted);line-height:1.6;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.pkg-note b{color:var(--white);font-weight:500}
+.pkg-note-ic{
+  width:38px;height:38px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--gold-dim);border:1px solid var(--gold-rim);
+}
+.pkg-note-ic svg{width:18px;height:18px;stroke:var(--gold-soft);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============================================
+   PROCESS
+   ============================================ */
+.proc{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  margin-top:60px;
+  border:1px solid var(--rim);border-radius:20px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.005));
+  backdrop-filter:blur(10px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.proc-step{
+  padding:36px 32px;
+  border-right:1px solid var(--rim);
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.proc-step:last-child{border-right:none}
+.proc-step::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--blue),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.proc-step:hover{background:rgba(71,151,255,0.03)}
+.proc-step:hover::before{opacity:1}
+.pstep-n{
+  font-family:var(--display);font-weight:500;font-size:3rem;
+  line-height:1;color:var(--faint);opacity:0.7;
+  letter-spacing:-0.03em;
+  margin-bottom:18px;
+  transition:color .3s;
+}
+.proc-step:hover .pstep-n{color:var(--blue-2);opacity:1}
+.pstep-tag{
+  display:inline-block;
+  font-family:var(--mono);font-size:0.66rem;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--blue-2);
+  background:var(--blue-dim);border:1px solid var(--blue-rim);
+  padding:4px 10px;border-radius:100px;margin-bottom:14px;
+}
+.pstep-h{
+  font-family:var(--display);font-weight:500;font-size:1.15rem;
+  letter-spacing:-0.015em;margin-bottom:10px;
+}
+.pstep-p{font-size:0.86rem;color:var(--muted);line-height:1.65}
+
+/* ============================================
+   FAQ
+   ============================================ */
+.faq-list{
+  margin-top:48px;
+  display:flex;flex-direction:column;gap:12px;
+  max-width:900px;
+}
+.faq-item{
+  background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:16px;
+  overflow:hidden;
+  transition:border-color .3s,background .3s;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.faq-item:hover{border-color:var(--rim2)}
+.faq-item[open]{border-color:var(--blue-rim);background:linear-gradient(180deg,rgba(71,151,255,0.05),rgba(71,151,255,0.01))}
+.faq-q{
+  padding:22px 28px;cursor:none;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  font-family:var(--display);font-weight:500;font-size:1.05rem;
+  letter-spacing:-0.015em;color:var(--white);
+  list-style:none;
+}
+.faq-q::-webkit-details-marker{display:none}
+.faq-plus{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  background:var(--pane2);border:1px solid var(--rim);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s;
+}
+.faq-plus svg{width:12px;height:12px;stroke:var(--off);fill:none;stroke-width:1.8;transition:transform .3s}
+.faq-item[open] .faq-plus{background:var(--blue-dim);border-color:var(--blue-rim)}
+.faq-item[open] .faq-plus svg{transform:rotate(45deg);stroke:var(--blue-2)}
+.faq-a{
+  padding:0 28px 24px;
+  font-size:0.95rem;color:var(--muted);line-height:1.7;
+  max-width:780px;
+}
+.faq-a b{color:var(--off);font-weight:500}
+.faq-a p+p{margin-top:12px}
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+.final{
+  position:relative;z-index:3;
+  padding:140px 32px;
+  background:var(--void);
+  border-top:1px solid var(--rim);
+  overflow:hidden;
+  text-align:center;
+}
+.final-glow{
+  position:absolute;width:800px;height:500px;border-radius:50%;filter:blur(120px);
+  background:
+    radial-gradient(circle at 30% 50%,rgba(245,181,68,0.1),transparent 60%),
+    radial-gradient(circle at 70% 50%,rgba(71,151,255,0.1),transparent 60%);
+  top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;
+}
+.final-inner{position:relative;z-index:3;max-width:720px;margin:0 auto}
+.final h2{
+  font-family:var(--display);font-weight:500;
+  font-size:clamp(2.2rem,4.4vw,3.8rem);
+  line-height:1.02;letter-spacing:-0.035em;
+  margin-bottom:24px;
+  font-variation-settings:'opsz' 144;
+}
+.final h2 em{
+  font-style:italic;font-weight:400;
+  background:linear-gradient(95deg,var(--gold-soft),var(--blue-mist));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-variation-settings:'opsz' 12;
+}
+.final-sub{font-size:1.05rem;color:var(--muted);line-height:1.7;margin-bottom:44px}
+.final-meta{
+  margin-top:36px;
+  display:flex;gap:28px;justify-content:center;flex-wrap:wrap;
+  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.06em;
+  color:var(--dim);text-transform:uppercase;
+}
+.final-meta span{display:flex;align-items:center;gap:6px}
+.final-meta span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold)}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer{
+  background:var(--void);
+  border-top:1px solid var(--rim);
+  padding:48px 32px 36px;
+  position:relative;z-index:3;
+}
+.foot{
+  max-width:1280px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.foot-links{display:flex;gap:28px;flex-wrap:wrap}
+.foot-links a{
+  font-family:var(--mono);font-size:0.72rem;color:var(--dim);
+  letter-spacing:0.04em;transition:color .2s;
+}
+.foot-links a:hover{color:var(--white)}
+.foot-copy{font-family:var(--mono);font-size:0.7rem;color:var(--faint);letter-spacing:0.04em}
+
+/* ============================================
+   REVEAL
+   ============================================ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--void)}
+::-webkit-scrollbar-thumb{background:var(--faint);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media(max-width:1100px){
+  .pkg-grid{grid-template-columns:1fr 1fr}
+  .pkg-card:last-child{grid-column:1/-1}
+  .adv-grid{grid-template-columns:1fr 1fr}
+  .adv-card:last-child{grid-column:1/-1}
+  .ps-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .stat{border-bottom:1px solid var(--rim)}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(3),.stat:nth-child(4){border-bottom:none}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .b-wide,.b-hero{grid-column:span 2}
+  .b-tall{grid-row:span 1}
+}
+@media(max-width:768px){
+  body{cursor:auto}
+  #cur,#curR{display:none}
+  section,.final{padding:90px 24px}
+  .hero{padding:calc(var(--nh) + 60px) 24px 80px}
+  .hero h1{font-size:clamp(2rem,9vw,3.4rem)}
+  .nav-links{display:none}
+  .mob-btn{display:flex}
+  .hbtns{flex-direction:column;width:100%}
+  .btn-prim,.btn-ghost{width:100%;justify-content:center}
+  .hero-mockup{margin-top:60px}
+  .mockup-frame{transform:none}
+  .mk-hero{grid-template-columns:1fr;gap:18px}
+  .mk-hero h3{font-size:1.25rem}
+  .mk-float{display:none}
+  .pkg-grid{grid-template-columns:1fr}
+  .pkg-card:last-child{grid-column:auto}
+  .adv-grid{grid-template-columns:1fr}
+  .adv-card:last-child{grid-column:auto}
+  .proc{grid-template-columns:1fr}
+  .proc-step{border-right:none;border-bottom:1px solid var(--rim)}
+  .proc-step:last-child{border-bottom:none}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .stat{padding:32px 20px}
+  .bento{grid-template-columns:1fr}
+  .b-wide,.b-hero,.b-tall{grid-column:auto;grid-row:auto}
+  .pkg-note{flex-direction:column;text-align:center}
+  .site-header{padding:0 20px}
+  footer{padding:36px 20px 28px}
+  .foot{flex-direction:column;align-items:flex-start;gap:20px}
+  .hero-meta{gap:14px}
+  .hero-meta-item{font-size:0.65rem}
+}
+@media(max-width:480px){
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem);letter-spacing:-0.025em}
+  .stitle{font-size:1.9rem}
+  .final h2{font-size:2rem}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .hbadge{font-size:0.62rem;padding:5px 12px 5px 8px}
+  .logo img{height:24px}
+  .logo-tag{font-size:0.6rem;padding-left:10px;letter-spacing:0.12em}
+}
+</style>
+</head>
+<body>
+
+<!-- atmosphere -->
+<div class="bg-mesh"></div>
+<div class="bg-grid"></div>
+<div class="bg-grain"></div>
+<canvas id="particles"></canvas>
+
+<!-- cursor -->
+<div id="cur"></div>
+<div id="curR"></div>
+
+<!-- scroll progress -->
+<div class="scroll-prog" id="scrollProg"></div>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <img src="https://github.com/buckleydigital/ql-site/raw/main/quoteleads-logo-white.png" alt="QuoteLeads">
+      <span class="logo-tag">Solar</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#advantage">Why Us</a></li>
+      <li><a href="#built">What's Built</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#cta" class="nav-cta">
+        Book Strategy Call
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a></li>
+    </ul>
+    <button class="mob-btn" id="mobBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mob-menu" id="mobMenu">
+    <a href="#advantage">Why Us</a>
+    <a href="#built">What's Built</a>
+    <a href="#packages">Packages</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+    <a href="#cta" class="mob-cta">Book Strategy Call</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-ambi ha1"></div>
+  <div class="hero-ambi ha2"></div>
+  <div class="hero-ambi ha3"></div>
+
+  <div class="hbadge">
+    <span class="bpulse"></span>
+    <span>Solar Websites · <b>Built by campaign operators</b></span>
+  </div>
+
+  <h1>Solar sites that book installs — <em>because we book installs.</em></h1>
+
+  <p class="hero-sub">
+    Premium websites and funnels engineered from <b>thousands of real solar campaigns</b>. Built for the installer who doesn't want to fight Solarquotes on price.
+  </p>
+
+  <div class="hbtns">
+    <a href="#cta" class="btn-prim">
+      Book Strategy Call
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8z"/></svg>
+    </a>
+    <a href="#built" class="btn-ghost">
+      <span class="dot"></span>
+      See what's built
+    </a>
+  </div>
+
+  <div class="hero-meta">
+    <div class="hero-meta-item">CEC-compliant architecture</div>
+    <div class="hero-meta-item">Post-2026 rebate ready</div>
+    <div class="hero-meta-item">5-7 day build</div>
+    <div class="hero-meta-item">You own everything</div>
+  </div>
+
+  <!-- HERO MOCKUP -->
+  <div class="hero-mockup">
+    <div class="mockup-frame">
+      <div class="mockup-bar">
+        <span class="mockup-dot r"></span>
+        <span class="mockup-dot y"></span>
+        <span class="mockup-dot g"></span>
+        <div class="mockup-url">apexsolar.com.au / get-a-quote</div>
+      </div>
+      <div class="mockup-body">
+        <!-- fake solar installer site -->
+        <div class="mk-nav">
+          <div class="mk-logo">
+            <div class="mk-logo-mark"></div>
+            <span>Apex Solar</span>
+          </div>
+          <div class="mk-nav-links">
+            <span>Systems</span>
+            <span>Batteries</span>
+            <span>Finance</span>
+            <span>Reviews</span>
+          </div>
+          <span class="mk-nav-cta">Free Site Assessment</span>
+        </div>
+        <div class="mk-hero">
+          <div>
+            <div class="mk-hero-tag">
+              <span>☼</span>
+              CEC Accredited · 500+ Installs
+            </div>
+            <h3>Cut your power bill by up to <em>82%</em> in Sydney's Inner West.</h3>
+            <p>Premium Tier-1 panels, 25-year workmanship warranty, and a same-day site assessment from a local team — not a call centre.</p>
+            <div class="mk-hero-ctas">
+              <span class="mk-btn mk-btn-prim">Get My Quote</span>
+              <span class="mk-btn mk-btn-sec">View Systems</span>
+            </div>
+          </div>
+          <div class="mk-calc">
+            <div class="mk-calc-head">
+              <span class="mk-calc-title">Savings Estimator</span>
+              <span class="mk-calc-pill">Live</span>
+            </div>
+            <div class="mk-calc-row"><span>System size</span><span>6.6 kW</span></div>
+            <div class="mk-calc-row"><span>Daily usage</span><span>22 kWh</span></div>
+            <div class="mk-calc-row"><span>STC rebate</span><span>$2,480</span></div>
+            <div class="mk-calc-result">
+              <div class="mk-calc-result-label">Estimated savings over 10 years</div>
+              <div class="mk-calc-result-val">$38,450</div>
+            </div>
+          </div>
+        </div>
+        <div class="mk-trust">
+          <span class="mk-trust-item">Clean Energy Council</span>
+          <span class="mk-trust-item">NSW Approved Retailer</span>
+          <span class="mk-trust-item">4.9 ★ · 287 reviews</span>
+          <span class="mk-trust-item">Finance from $0 down</span>
+        </div>
+      </div>
+    </div>
+    <div class="mk-float f1">
+      <span class="mk-float-dot"></span>
+      <div>
+        <div class="mk-float-k">New lead</div>
+        <div class="mk-float-v">+$24,800 job</div>
+      </div>
+    </div>
+    <div class="mk-float f2">
+      <span class="mk-float-dot"></span>
+      <div>
+        <div class="mk-float-k">Mobile load</div>
+        <div class="mk-float-v">1.2s</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="m-track">
+    <div class="m-item"><span class="m-sep gold"></span>STC Rebate Calculator</div>
+    <div class="m-item"><span class="m-sep"></span>Battery Payback Tools</div>
+    <div class="m-item"><span class="m-sep gold"></span>CEC Trust Stack</div>
+    <div class="m-item"><span class="m-sep"></span>Finance Integration</div>
+    <div class="m-item"><span class="m-sep gold"></span>Campaign-Tested Funnels</div>
+    <div class="m-item"><span class="m-sep"></span>Install Gallery System</div>
+    <div class="m-item"><span class="m-sep gold"></span>AI Quote Tool</div>
+    <div class="m-item"><span class="m-sep"></span>Under 1.5s Load Time</div>
+    <div class="m-item"><span class="m-sep gold"></span>Post-2026 Ready</div>
+    <div class="m-item"><span class="m-sep"></span>CRM + Lead Delivery</div>
+    <!-- duplicate -->
+    <div class="m-item"><span class="m-sep gold"></span>STC Rebate Calculator</div>
+    <div class="m-item"><span class="m-sep"></span>Battery Payback Tools</div>
+    <div class="m-item"><span class="m-sep gold"></span>CEC Trust Stack</div>
+    <div class="m-item"><span class="m-sep"></span>Finance Integration</div>
+    <div class="m-item"><span class="m-sep gold"></span>Campaign-Tested Funnels</div>
+    <div class="m-item"><span class="m-sep"></span>Install Gallery System</div>
+    <div class="m-item"><span class="m-sep gold"></span>AI Quote Tool</div>
+    <div class="m-item"><span class="m-sep"></span>Under 1.5s Load Time</div>
+    <div class="m-item"><span class="m-sep gold"></span>Post-2026 Ready</div>
+    <div class="m-item"><span class="m-sep"></span>CRM + Lead Delivery</div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-row">
+    <div class="stat gold rv">
+      <span class="stn">1,000<span class="stn-unit">+</span></span>
+      <div class="stl"><b>Solar leads processed</b>Through funnels we've built and optimised</div>
+      <div class="stl-note">[Placeholder · replace with exact figure]</div>
+    </div>
+    <div class="stat rv d1">
+      <span class="stn">70<span class="stn-unit">%</span></span>
+      <div class="stl"><b>Lead-to-appointment</b>Typical rate when AI follow-up is active</div>
+    </div>
+    <div class="stat rv d2">
+      <span class="stn">5–7<span class="stn-unit">d</span></span>
+      <div class="stl"><b>Brief to launch</b>Productised, not bespoke from scratch</div>
+    </div>
+    <div class="stat gold rv d3">
+      <span class="stn">2026<span class="stn-unit">+</span></span>
+      <div class="stl"><b>Rebate architecture</b>Built for the new battery scheme and STC step-downs</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM / SOLUTION -->
+<section id="problem">
+  <div class="si">
+    <div class="rv"><div class="eyebrow">The Cost of a Generic Solar Site</div></div>
+    <h2 class="stitle rv">Your site is actively <em>losing installs</em> every day.</h2>
+
+    <div class="ps-grid">
+      <div class="ps-col bad rv d1">
+        <div class="ps-head">
+          <span>Without a converting solar site</span>
+        </div>
+        <h3>The slow bleed</h3>
+        <ul class="ps-list">
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+            <span><b>Solarquotes and marketplaces</b> eating your margin on every shared-lead job</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+            <span>Generic installer site = commoditised in the homeowner's mind = <b>price war with the big-box solar giants</b></span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+            <span>No STC, savings, or payback calculator — homeowners <b>bounce to "instant quote"</b> sites that do</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+            <span>CEC accreditation, warranty, and finance <b>buried three clicks deep</b> — trust gap on a $20k+ decision</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+            <span>Slow mobile load — <b>60% of solar search traffic</b> is gone before the page paints</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+            <span>Dated 2019 install gallery — <b>no proof</b> you've actually done the work</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ps-col good rv d2">
+        <div class="ps-head">
+          <span>With a SolarSites build</span>
+        </div>
+        <h3>The install machine</h3>
+        <ul class="ps-list">
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Branded as the <b>premium, trusted local solar choice</b> — not another quote on a spreadsheet</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Campaign-tested conversion flow</b> built from thousands of real solar leads we've already run</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Built-in <b>STC rebate, savings, and battery payback</b> calculators that pre-qualify every visitor</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>CEC, warranty, and finance trust stack <b>front and centre</b> — objections handled before they're raised</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Sub-1.5s mobile load</b> — every solar searcher gets the page before they bail</span>
+          </li>
+          <li class="ps-item">
+            <span class="ps-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Live-fed install gallery, case studies, and review widgets — <b>social proof that never goes stale</b></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGE -->
+<section id="advantage">
+  <div class="si">
+    <div class="rv"><div class="eyebrow blue">The Solar Advantage</div></div>
+    <h2 class="stitle rv">Three reasons we're <em>not another web agency.</em></h2>
+    <p class="sub-stitle rv d1">We don't design solar sites because we saw a brief. We design them because we've spent years running the ads and watching what converts — and what doesn't.</p>
+
+    <div class="adv-grid">
+      <div class="adv-card rv d1">
+        <div class="adv-num">01</div>
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/><circle cx="20" cy="9" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <div class="adv-title">We run the solar campaigns.</div>
+        <div class="adv-desc">
+          We've spent <b>[placeholder: $X+ in solar ad spend]</b> across Meta and Google. Every heading, CTA, trust signal, and objection on your site is tested against real buyer data — not agency guesswork.
+        </div>
+        <div class="adv-placeholder">replace with exact ad-spend figure</div>
+      </div>
+
+      <div class="adv-card gold rv d2">
+        <div class="adv-num">02</div>
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </div>
+        <div class="adv-title">Built for post-2026 Australia.</div>
+        <div class="adv-desc">
+          STC step-downs. The new federal <b>battery rebate scheme</b>. State-by-state feed-in tariffs. Your site architecture handles each of them with a config change, not a rebuild.
+        </div>
+      </div>
+
+      <div class="adv-card rv d3">
+        <div class="adv-num">03</div>
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="adv-title">Homeowner psychology at $20K.</div>
+        <div class="adv-desc">
+          Cost anxiety, roof concerns, performance guarantees, finance barriers, "will this company still exist in 10 years" — <b>every objection</b> handled in the flow before they think to leave.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENTO -->
+<section id="built">
+  <div class="si">
+    <div class="rv"><div class="eyebrow">What's Built</div></div>
+    <h2 class="stitle rv">Every component of a <em>converting solar site</em>, in one build.</h2>
+    <p class="sub-stitle rv d1">Not a template dropped into a Webflow account. A complete solar conversion system wired to your CRM, ad pixels, and lead delivery.</p>
+
+    <div class="bento">
+      <!-- HERO BENTO -->
+      <div class="b-card b-hero rv">
+        <div>
+          <div class="b-tag">01 · Flagship</div>
+          <div class="b-ic gold">
+            <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/><circle cx="6" cy="6" r="1" fill="currentColor"/><circle cx="6" cy="12" r="1" fill="currentColor"/><circle cx="6" cy="18" r="1" fill="currentColor"/></svg>
+          </div>
+          <div class="b-title">Campaign-tested landing pages.</div>
+          <div class="b-desc">Each page is a conversion experiment. Heading variants, CTA placements, calculator positions, and trust stacks we've already tested across thousands of solar leads — shipped as your default, not as an A/B test you have to fund.</div>
+        </div>
+        <div class="b-hero-visual">
+          <div class="b-chart">
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+            <div class="b-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STC calculator -->
+      <div class="b-card rv d1">
+        <div>
+          <div class="b-tag">02</div>
+          <div class="b-ic blue">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10h8M8 14h8"/><path d="M10 7l-2 2M14 7l2 2M14 17l2-2M10 17l-2-2"/></svg>
+          </div>
+          <div class="b-title">STC rebate estimator.</div>
+          <div class="b-desc">Live-calculated rebate based on postcode zone, system size, and install year.</div>
+        </div>
+      </div>
+
+      <!-- Battery payback -->
+      <div class="b-card rv d2">
+        <div>
+          <div class="b-tag">03</div>
+          <div class="b-ic gold">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="18" height="10" rx="1"/><path d="M20 10v4M6 12h2M10 12h2M14 12h2"/></svg>
+          </div>
+          <div class="b-title">Battery payback tool.</div>
+          <div class="b-desc">Pre-wired for the post-2026 federal battery rebate. Updates when policy shifts.</div>
+        </div>
+      </div>
+
+      <!-- Savings calc — wide -->
+      <div class="b-card b-wide rv d2">
+        <div>
+          <div class="b-tag">04</div>
+          <div class="b-ic blue">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="b-title">Savings + payback calculator.</div>
+          <div class="b-desc">The single highest-converting element on every solar site we've built — visitors who use it convert at <b>3-4x</b> the site average.</div>
+        </div>
+        <div class="b-mini-calc">
+          <div class="b-mini-row"><span>System size</span><span>6.6 kW</span></div>
+          <div class="b-mini-row"><span>STC rebate</span><span>−$2,480</span></div>
+          <div class="b-mini-row"><span>Monthly saving</span><span>$287</span></div>
+          <div class="b-mini-row tot"><span>10-year saving</span><span>$38,450</span></div>
+        </div>
+      </div>
+
+      <!-- CEC trust stack -->
+      <div class="b-card rv d3">
+        <div>
+          <div class="b-tag">05</div>
+          <div class="b-ic gold">
+            <svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="b-title">CEC + warranty stack.</div>
+          <div class="b-desc">Accreditation, approved retailer status, and warranty terms front-loaded.</div>
+        </div>
+      </div>
+
+      <!-- Finance -->
+      <div class="b-card rv d3">
+        <div>
+          <div class="b-tag">06</div>
+          <div class="b-ic blue">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h2"/></svg>
+          </div>
+          <div class="b-title">Finance + green loan flow.</div>
+          <div class="b-desc">Plug in Brighte, Humm, or your lender — shown at the right moment in the funnel.</div>
+        </div>
+      </div>
+
+      <!-- Gallery wide -->
+      <div class="b-card b-wide rv d4">
+        <div>
+          <div class="b-tag">07</div>
+          <div class="b-ic">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          </div>
+          <div class="b-title">Install gallery + review widgets.</div>
+          <div class="b-desc">Auto-pulled from Google, Product Review, or your CRM. Social proof that refreshes itself — never goes stale on you.</div>
+        </div>
+      </div>
+
+      <!-- Performance -->
+      <div class="b-card rv d4">
+        <div>
+          <div class="b-tag">08</div>
+          <div class="b-ic gold">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="b-title">Sub-1.5s mobile load.</div>
+          <div class="b-desc">Passes every Core Web Vital. Because 60% of your solar searches are mobile.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="si">
+    <div class="rv"><div class="eyebrow blue">Packages</div></div>
+    <h2 class="stitle rv">Three ways to <em>put installs on your calendar.</em></h2>
+    <p class="sub-stitle rv d1">Productised, transparent pricing. One-time payment. Zero monthly fees on the build itself. You own the site, source files, and everything in between.</p>
+
+    <div class="pkg-grid">
+
+      <!-- FOUNDATION -->
+      <div class="pkg-card rv d1">
+        <div class="pkg-head">
+          <span class="pkg-num">01 · Foundation</span>
+        </div>
+        <div class="pkg-name">Solar Site</div>
+        <div class="pkg-desc">A premium solar installer site that builds trust on arrival and pre-qualifies visitors before they hit your inbox.</div>
+        <div class="pkg-price">
+          <span class="pkg-price-curr">AU$</span>
+          <span class="pkg-price-val">1,250</span>
+        </div>
+        <div class="pkg-price-note">ONE-TIME · NO MONTHLY FEES</div>
+        <hr class="pkg-divider">
+        <ul class="pkg-list">
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Sub-1.5s mobile load, every time</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>CEC + warranty + finance</b> trust stack front-loaded</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Solar-specific SEO architecture from day one</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Install gallery + review widget wiring</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Source files + <b>permanent ownership</b></span>
+          </li>
+        </ul>
+        <a href="#cta" class="pkg-btn">
+          Start with Foundation
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- GROWTH -->
+      <div class="pkg-card featured rv d2">
+        <div class="pkg-head">
+          <span class="pkg-num">02 · Growth</span>
+          <span class="pkg-pop">Most Popular</span>
+        </div>
+        <div class="pkg-name">Solar <em>Funnel System</em></div>
+        <div class="pkg-desc">Everything in Foundation, plus the conversion machinery that turns paid traffic into signed install agreements.</div>
+        <div class="pkg-price">
+          <span class="pkg-price-curr">AU$</span>
+          <span class="pkg-price-val">2,500</span>
+        </div>
+        <div class="pkg-price-note">ONE-TIME · NO MONTHLY FEES</div>
+        <hr class="pkg-divider">
+        <ul class="pkg-list">
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Everything in Foundation</b></span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Campaign-tested landing pages for Meta + Google</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>STC + savings + battery payback</b> calculators</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>A/B tested layouts and CTA variants out of the box</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Pixel, GA4, CRM + lead delivery integration</span>
+          </li>
+        </ul>
+        <a href="#cta" class="pkg-btn">
+          Build the Funnel System
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- ENTERPRISE -->
+      <div class="pkg-card rv d3">
+        <div class="pkg-head">
+          <span class="pkg-num">03 · Enterprise</span>
+        </div>
+        <div class="pkg-name">Full Stack AI</div>
+        <div class="pkg-desc">The complete install machine. Growth package plus AI quoting, customer portals, and full backend integration.</div>
+        <div class="pkg-price">
+          <span class="pkg-price-custom">Custom</span>
+        </div>
+        <div class="pkg-price-note">SCOPED · AVG. 10-14 DAY BUILD</div>
+        <hr class="pkg-divider">
+        <ul class="pkg-list">
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><b>Everything in Growth</b></span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>AI-powered quote + proposal generation</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Customer portal with <b>live install tracking</b></span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Open Solar, SolarPlus, HubSpot, or custom CRM</span>
+          </li>
+          <li class="pkg-item">
+            <span class="pkg-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span>Full workflow + notification automation</span>
+          </li>
+        </ul>
+        <a href="#cta" class="pkg-btn">
+          Scope a Custom Build
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="pkg-note rv">
+      <div class="pkg-note-ic">
+        <svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <div>
+        <b>Zero ongoing management fees.</b> Pay once. You own the site, source files, CRM data, and domain — permanently. Lead gen management is separate and optional, and you can add it any time.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="si">
+    <div class="rv"><div class="eyebrow">The Process</div></div>
+    <h2 class="stitle rv">From brief to <em>booked installs</em> — in four steps.</h2>
+
+    <div class="proc rv">
+      <div class="proc-step">
+        <div class="pstep-n">01</div>
+        <div class="pstep-tag">Discovery</div>
+        <div class="pstep-h">Your market, your system mix.</div>
+        <div class="pstep-p">Service area, system sizes, battery focus, finance partners, and where you're currently bleeding leads. No 40-page brief — focused and direct.</div>
+      </div>
+      <div class="proc-step">
+        <div class="pstep-n">02</div>
+        <div class="pstep-tag">Strategy</div>
+        <div class="pstep-h">Conversion wireframes.</div>
+        <div class="pstep-p">Every page, CTA, and calculator placement mapped against real solar buyer psychology and live campaign data. Approved before a pixel is touched.</div>
+      </div>
+      <div class="proc-step">
+        <div class="pstep-n">03</div>
+        <div class="pstep-tag">Build</div>
+        <div class="pstep-h">Design + engineering.</div>
+        <div class="pstep-p">High-fidelity designs signed off before build. Performance benchmarks hit before handover. Weekly checkpoints, no black-box development.</div>
+      </div>
+      <div class="proc-step">
+        <div class="pstep-n">04</div>
+        <div class="pstep-tag">Launch</div>
+        <div class="pstep-h">Live + scaled.</div>
+        <div class="pstep-p">Full handover, team training, CRM wired in. We track installs booked — not just pageviews. Optional retainer available.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="si">
+    <div class="rv"><div class="eyebrow blue">Questions</div></div>
+    <h2 class="stitle rv">Answered <em>directly.</em></h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>Do you work with solar-only, or solar + battery hybrid installers?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>Both. The Growth package is specifically architected around the post-2026 battery rebate, so hybrid installers get the strongest leverage — the payback calculator dynamically includes battery economics where relevant. Solar-only builds still use the same funnel framework without the battery modules.</p>
+        </div>
+      </details>
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>What happens when STC values step down, or state rebates change?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>The calculators are config-driven, not hardcoded. When STC multipliers step down (as they do annually), feed-in tariffs shift, or the battery rebate adjusts, we update the config — your site stays accurate without a rebuild. Enterprise package includes ongoing policy updates as part of scope.</p>
+        </div>
+      </details>
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>Does this replace or complement Solarquotes / marketplace leads?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>Replace, over time. Most installers who work with us gradually reduce marketplace dependency because owned leads are dramatically higher margin — you're not paying $80-$150 per shared lead anymore, and you're not competing against two other quotes on the same job. Some keep a small marketplace spend for volume smoothing during build-up. Your call.</p>
+        </div>
+      </details>
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>Can it integrate with Open Solar, SolarPlus, or our existing CRM?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>Yes. Open Solar, SolarPlus, HubSpot, Pipedrive, Salesforce, Zoho, and custom setups are all supported. Growth package includes one CRM integration; Enterprise covers multi-system workflows with custom automation.</p>
+        </div>
+      </details>
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>Who owns the site and source files?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>You do. <b>Permanently.</b> Domain, hosting account, source code, design files, CRM data, ad pixels — all registered and built on your accounts from day one. If you ever want to walk away, move providers, or hire internally, nothing breaks.</p>
+        </div>
+      </details>
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>Is 5-7 days actually realistic for a real solar site?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>For Foundation and Growth, yes — because we're not designing from a blank canvas. The conversion architecture is proven, so the build is mostly customisation, content, and integration rather than strategy-from-scratch. Enterprise builds run 10-14 days because of the backend AI and portal work.</p>
+        </div>
+      </details>
+
+      <details class="faq-item rv d1">
+        <summary class="faq-q">
+          <span>Do I need the lead gen system to make this work?</span>
+          <span class="faq-plus"><svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-linecap="round"/></svg></span>
+        </summary>
+        <div class="faq-a">
+          <p>No. The site works standalone. But most installers add managed lead gen within 2-3 months because the conversion infrastructure is already there — you're just turning on the traffic tap. It's optional, not required.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final" id="cta">
+  <div class="final-glow"></div>
+  <div class="final-inner">
+    <div class="rv"><div class="eyebrow" style="justify-content:center">Next Step</div></div>
+    <h2 class="rv">Ready to stop losing installs to <em>marketplace leads?</em></h2>
+    <p class="final-sub rv d1">Book a 20-minute strategy call with the QuoteLeads team. We'll look at your current site, your conversion gaps, and whether Foundation, Growth, or Enterprise fits your install volume target.</p>
+
+    <div class="hbtns rv d2" style="justify-content:center">
+      <a href="#" class="btn-prim">
+        Book Strategy Call
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8z"/></svg>
+      </a>
+      <a href="#packages" class="btn-ghost">
+        <span class="dot"></span>
+        Compare packages
+      </a>
+    </div>
+
+    <div class="final-meta rv d3">
+      <span>5 builds per month</span>
+      <span>You own everything</span>
+      <span>No lock-in</span>
+      <span>Australian-owned</span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div class="logo">
+      <img src="https://github.com/buckleydigital/ql-site/raw/main/quoteleads-logo-white.png" alt="QuoteLeads">
+      <span class="logo-tag">Solar</span>
+    </div>
+    <div class="foot-links">
+      <a href="#advantage">Why Us</a>
+      <a href="#packages">Packages</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta">Book Call</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+    <div class="foot-copy">© 2026 QuoteLeads · Australian owned and operated</div>
+  </div>
+</footer>
+
+<script>
+// ============================================
+// PARTICLES
+// ============================================
+const W = () => window.innerWidth, H = () => window.innerHeight;
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+const resize = () => { canvas.width = W(); canvas.height = H(); };
+resize();
+window.addEventListener('resize', resize);
+
+class P {
+  constructor() { this.reset(true); }
+  reset(init) {
+    this.x = Math.random() * W();
+    this.y = init ? Math.random() * H() : H() + 10;
+    this.r = Math.random() * 1.6 + 0.3;
+    this.vx = (Math.random() - 0.5) * 0.15;
+    this.vy = -(Math.random() * 0.3 + 0.08);
+    this.a = Math.random() * 0.4 + 0.08;
+    this.life = 0;
+    this.maxL = Math.random() * 500 + 250;
+    const r = Math.random();
+    this.c = r > 0.7 ? '#F5B544' : r > 0.35 ? '#4797FF' : '#B8D4FF';
+    this.glow = this.r > 1.2;
+  }
+  draw() {
+    const t = this.life / this.maxL;
+    const fade = t < 0.1 ? t / 0.1 : t > 0.8 ? (1 - t) / 0.2 : 1;
+    ctx.save();
+    ctx.globalAlpha = this.a * fade;
+    if (this.glow) { ctx.shadowBlur = this.r * 6; ctx.shadowColor = this.c; }
+    ctx.fillStyle = this.c;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy; this.life++;
+    if (this.life > this.maxL || this.y < -20) this.reset();
+  }
+}
+const pts = Array.from({ length: 60 }, () => new P());
+function anim() { ctx.clearRect(0, 0, W(), H()); pts.forEach(p => { p.update(); p.draw(); }); requestAnimationFrame(anim); }
+anim();
+
+// ============================================
+// CURSOR
+// ============================================
+const cur = document.getElementById('cur');
+const curR = document.getElementById('curR');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cur.style.left = mx + 'px';
+  cur.style.top = my + 'px';
+});
+
+(function lag() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  curR.style.left = rx + 'px';
+  curR.style.top = ry + 'px';
+  requestAnimationFrame(lag);
+})();
+
+document.querySelectorAll('a, button, .pkg-card, .adv-card, .b-card, .stat, .proc-step, .faq-q, details summary').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('hov'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('hov'));
+});
+
+// magnetic buttons
+document.querySelectorAll('.btn-prim').forEach(btn => {
+  btn.addEventListener('mousemove', e => {
+    const r = btn.getBoundingClientRect();
+    btn.style.setProperty('--bx', ((e.clientX - r.left) / r.width * 100) + '%');
+    btn.style.setProperty('--by', ((e.clientY - r.top) / r.height * 100) + '%');
+  });
+});
+
+// ============================================
+// HEADER SCROLL STATE + PROGRESS
+// ============================================
+const hdr = document.getElementById('siteHeader');
+const sp = document.getElementById('scrollProg');
+window.addEventListener('scroll', () => {
+  hdr.classList.toggle('sc', window.scrollY > 20);
+  const d = document.documentElement;
+  sp.style.transform = 'scaleX(' + (d.scrollTop / (d.scrollHeight - d.clientHeight)) + ')';
+}, { passive: true });
+
+// ============================================
+// REVEAL ON SCROLL
+// ============================================
+const rvEls = document.querySelectorAll('.rv');
+const ro = new IntersectionObserver(ents => {
+  ents.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      ro.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+rvEls.forEach(el => ro.observe(el));
+
+// ============================================
+// MOBILE MENU
+// ============================================
+const mobBtn = document.getElementById('mobBtn');
+const mobMenu = document.getElementById('mobMenu');
+if (mobBtn && mobMenu) {
+  mobBtn.addEventListener('click', () => mobMenu.classList.toggle('open'));
+  mobMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobMenu.classList.remove('open')));
+}
+
+// ============================================
+// SMOOTH SCROLL
+// ============================================
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      const el = document.querySelector(id);
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+});
+
+// ============================================
+// FAQ — single open
+// ============================================
+document.querySelectorAll('details.faq-item').forEach(d => {
+  d.addEventListener('toggle', () => {
+    if (d.open) {
+      document.querySelectorAll('details.faq-item').forEach(o => { if (o !== d) o.open = false; });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
