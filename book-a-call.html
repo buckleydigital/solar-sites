@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Strategy Call | QuoteLeads Solar</title>
+<meta name="description" content="Book a 20-minute strategy call with the QuoteLeads solar team. Monday to Friday, 10am–2pm AEST.">
+<link rel="canonical" href="https://solar-sites.quoteleads.com.au/book-a-call">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   TOKENS
+   ============================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --void:#050507;
+  --deep:#08080C;
+  --surf:#0C0C14;
+  --pane:rgba(255,255,255,0.035);
+  --pane2:rgba(255,255,255,0.06);
+  --pane3:rgba(255,255,255,0.09);
+  --rim:rgba(255,255,255,0.09);
+  --rim2:rgba(255,255,255,0.14);
+  --rim-top:rgba(255,255,255,0.22);
+  --blue:#4797FF;
+  --blue-2:#7CB9FF;
+  --blue-mist:#B8D4FF;
+  --blue-dim:rgba(71,151,255,0.12);
+  --blue-rim:rgba(71,151,255,0.3);
+  --gold:#F5B544;
+  --gold-2:#FFC96B;
+  --gold-soft:#FFD88C;
+  --gold-dim:rgba(245,181,68,0.12);
+  --gold-rim:rgba(245,181,68,0.32);
+  --red:#F87171;
+  --red-dim:rgba(248,113,113,0.12);
+  --red-rim:rgba(248,113,113,0.3);
+  --green:#34D399;
+  --green-dim:rgba(52,211,153,0.12);
+  --green-rim:rgba(52,211,153,0.32);
+  --white:#F5F5F7;
+  --off:#D4D4D8;
+  --muted:#8E8E96;
+  --dim:#5A5A63;
+  --faint:#2E2E36;
+  --display:'Fraunces','Times New Roman',serif;
+  --sans:'General Sans','Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --nh:72px;
+}
+html{scroll-behavior:smooth;background:var(--void)}
+body{
+  background:var(--void);color:var(--white);
+  font-family:var(--sans);font-size:16px;line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  font-feature-settings:'ss01','cv11';
+  min-height:100vh;
+  display:flex;flex-direction:column;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit;background:none;border:none;outline:none}
+button{cursor:pointer}
+
+/* ATMOSPHERE */
+.bg-mesh{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 50% at 80% 10%, rgba(71,151,255,0.08), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 15% 30%, rgba(245,181,68,0.04), transparent 65%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(71,151,255,0.04), transparent 70%);
+}
+.bg-grid{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.3;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+}
+.bg-grain{
+  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0.35;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size:220px;
+}
+
+/* HEADER */
+.site-header{
+  position:sticky;top:0;z-index:200;
+  padding:0 32px;
+  background:rgba(5,5,7,0.82);
+  backdrop-filter:blur(24px) saturate(1.4);
+  -webkit-backdrop-filter:blur(24px) saturate(1.4);
+  border-bottom:1px solid var(--rim);
+}
+.header-inner{
+  max-width:1080px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  height:var(--nh);
+}
+.logo{display:flex;align-items:center;gap:14px;color:var(--white)}
+.logo img{height:28px;width:auto;opacity:0.95}
+.logo-tag{
+  display:inline-block;padding-left:14px;
+  border-left:1px solid var(--rim2);
+  font-family:var(--mono);font-size:0.68rem;
+  color:var(--gold-soft);
+  letter-spacing:0.16em;text-transform:uppercase;
+  font-weight:500;
+}
+.back-link{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:0.7rem;
+  letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--muted);
+  transition:color .2s;
+  padding:8px 14px;border-radius:100px;
+  border:1px solid transparent;
+}
+.back-link:hover{color:var(--white);border-color:var(--rim);background:var(--pane)}
+.back-link svg{width:12px;height:12px;transition:transform .2s}
+.back-link:hover svg{transform:translateX(-2px)}
+
+/* LAYOUT */
+.wrap{
+  position:relative;z-index:3;
+  max-width:800px;margin:0 auto;width:100%;
+  padding:56px 32px 80px;
+  flex:1;
+}
+
+/* INTRO */
+.intro{text-align:center;margin-bottom:48px}
+.intro-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--pane2);border:1px solid var(--rim2);
+  padding:6px 14px 6px 10px;border-radius:100px;
+  font-family:var(--mono);font-size:0.68rem;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;color:var(--off);
+  margin-bottom:26px;
+  backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.intro-badge b{color:var(--white);font-weight:600}
+.intro-badge-dot{
+  width:6px;height:6px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 0 0 rgba(52,211,153,0.6);
+  animation:pulse 2s ease infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(52,211,153,0.7)}
+  70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}
+  100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}
+}
+.intro h1{
+  font-family:var(--display);font-weight:500;
+  font-size:clamp(2rem,5vw,3.2rem);
+  line-height:1.05;letter-spacing:-0.03em;
+  margin-bottom:18px;
+  font-variation-settings:'opsz' 144;
+}
+.intro h1 em{
+  font-style:italic;font-weight:400;
+  background:linear-gradient(95deg,var(--gold-soft),var(--blue-mist));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-variation-settings:'opsz' 12;
+}
+.intro p{
+  font-size:1rem;color:var(--muted);line-height:1.7;
+  max-width:540px;margin:0 auto;
+}
+.intro p b{color:var(--off);font-weight:500}
+
+/* STEPPER */
+.stepper{
+  display:flex;align-items:center;justify-content:center;gap:0;
+  margin-bottom:48px;
+  max-width:520px;margin-left:auto;margin-right:auto;
+}
+.step-node{
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  position:relative;z-index:2;flex-shrink:0;
+}
+.step-dot{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--pane2);border:1px solid var(--rim);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:0.72rem;font-weight:500;
+  color:var(--dim);
+  transition:all .4s ease;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.step-dot svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;display:none}
+.step-label{
+  font-family:var(--mono);font-size:0.64rem;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;color:var(--dim);
+  transition:color .3s ease;
+  white-space:nowrap;
+}
+.step-node.active .step-dot{
+  background:var(--blue-dim);border-color:var(--blue-rim);color:var(--blue-2);
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 16px rgba(71,151,255,0.3);
+}
+.step-node.active .step-label{color:var(--white)}
+.step-node.done .step-dot{
+  background:var(--gold-dim);border-color:var(--gold-rim);color:var(--gold-soft);
+}
+.step-node.done .step-dot span{display:none}
+.step-node.done .step-dot svg{display:block;stroke:var(--gold-soft)}
+.step-node.done .step-label{color:var(--muted)}
+.step-line{
+  flex:1;height:1px;background:var(--rim);margin:0 -4px;
+  margin-top:-20px;
+  position:relative;z-index:1;
+  transition:background .4s ease;
+}
+.step-line.done{background:linear-gradient(90deg,var(--gold-rim),var(--blue-rim))}
+
+/* PANEL */
+.panel{
+  background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:24px;
+  padding:40px;
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  box-shadow:
+    inset 0 1px 0 var(--rim-top),
+    0 40px 80px -20px rgba(0,0,0,0.5);
+  position:relative;overflow:hidden;
+}
+.panel::before{
+  content:'';position:absolute;top:-1px;left:10%;right:10%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);
+}
+
+/* STEP — shared */
+.step{display:none;animation:fadein .35s ease both}
+.step.active{display:block}
+@keyframes fadein{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+.step-head{margin-bottom:32px}
+.step-eyebrow{
+  font-family:var(--mono);font-size:0.68rem;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-2);
+  margin-bottom:12px;
+  display:flex;align-items:center;gap:10px;
+}
+.step-eyebrow::before{content:'';width:24px;height:1px;background:linear-gradient(90deg,var(--blue),transparent)}
+.step-eyebrow.gold{color:var(--gold-soft)}
+.step-eyebrow.gold::before{background:linear-gradient(90deg,var(--gold),transparent)}
+.step-title{
+  font-family:var(--display);font-weight:500;
+  font-size:1.7rem;line-height:1.15;letter-spacing:-0.02em;
+  margin-bottom:10px;
+}
+.step-sub{font-size:0.95rem;color:var(--muted);line-height:1.6;max-width:540px}
+
+/* FIELDS */
+.group{margin-bottom:28px}
+.group-title{
+  font-family:var(--mono);font-size:0.66rem;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);
+  margin-bottom:14px;
+  padding-bottom:10px;border-bottom:1px solid var(--rim);
+}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.field label{
+  font-size:0.82rem;color:var(--off);font-weight:500;
+  display:flex;align-items:center;gap:6px;
+}
+.field label .req{color:var(--gold-soft);font-size:0.88em}
+.field label .opt{font-family:var(--mono);font-size:0.62rem;color:var(--dim);letter-spacing:0.06em;text-transform:uppercase}
+.field input,.field select,.field textarea{
+  width:100%;
+  background:rgba(0,0,0,0.3);
+  border:1px solid var(--rim);border-radius:10px;
+  padding:12px 14px;
+  font-size:0.94rem;color:var(--white);
+  transition:all .25s;
+  font-family:var(--sans);
+}
+.field input::placeholder,.field textarea::placeholder{color:var(--dim)}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--blue-rim);
+  background:rgba(71,151,255,0.04);
+  box-shadow:0 0 0 3px rgba(71,151,255,0.08);
+}
+.field.err input,.field.err select,.field.err textarea{
+  border-color:var(--red-rim);background:rgba(248,113,113,0.04);
+}
+.field-err{
+  font-family:var(--mono);font-size:0.66rem;color:var(--red);
+  letter-spacing:0.04em;margin-top:-2px;
+  display:none;
+}
+.field.err .field-err{display:block}
+
+/* select arrow */
+.field select{
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%238E8E96' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;background-size:12px;
+  padding-right:38px;
+}
+
+/* CHIP SELECTS — button groups */
+.chips{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:10px;
+}
+.chips.cols-2{grid-template-columns:1fr 1fr}
+.chip{
+  position:relative;
+  padding:14px 16px;
+  background:rgba(0,0,0,0.25);border:1px solid var(--rim);
+  border-radius:12px;
+  font-size:0.88rem;color:var(--off);text-align:left;
+  transition:all .25s;
+  display:flex;flex-direction:column;gap:4px;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.chip .chip-label{font-weight:500;color:var(--white)}
+.chip .chip-sub{
+  font-family:var(--mono);font-size:0.64rem;
+  letter-spacing:0.06em;color:var(--muted);
+  text-transform:uppercase;
+}
+.chip:hover{border-color:var(--rim2);background:rgba(0,0,0,0.4)}
+.chip.selected{
+  border-color:var(--blue-rim);
+  background:linear-gradient(180deg,rgba(71,151,255,0.12),rgba(71,151,255,0.03));
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 0 1px var(--blue-rim), 0 0 20px -4px rgba(71,151,255,0.3);
+}
+.chip.selected .chip-sub{color:var(--blue-2)}
+.chip.selected::after{
+  content:'';position:absolute;top:10px;right:10px;
+  width:16px;height:16px;border-radius:50%;
+  background:var(--blue-dim);border:1px solid var(--blue-rim);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237CB9FF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size:10px;background-position:center;background-repeat:no-repeat;
+}
+
+/* STEP NAVIGATION */
+.step-nav{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+  margin-top:36px;padding-top:28px;
+  border-top:1px solid var(--rim);
+}
+.btn-prim{
+  position:relative;display:inline-flex;align-items:center;gap:10px;
+  background:var(--white);color:var(--void);
+  font-size:0.9rem;font-weight:500;letter-spacing:-0.005em;
+  padding:14px 24px;border-radius:100px;
+  transition:all .25s;overflow:hidden;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.6), 0 12px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.05);
+}
+.btn-prim:hover{background:var(--gold-soft);transform:translateY(-1px)}
+.btn-prim:disabled{opacity:0.4;cursor:not-allowed;transform:none;background:var(--white)}
+.btn-prim svg{width:14px;height:14px;transition:transform .25s}
+.btn-prim:hover:not(:disabled) svg{transform:translateX(3px)}
+
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--pane);border:1px solid var(--rim);
+  color:var(--off);font-size:0.88rem;font-weight:400;
+  padding:13px 20px;border-radius:100px;
+  transition:all .25s;
+  backdrop-filter:blur(10px);
+}
+.btn-ghost:hover{border-color:var(--rim2);color:var(--white);background:var(--pane2)}
+.btn-ghost svg{width:12px;height:12px;transition:transform .2s}
+.btn-ghost:hover svg{transform:translateX(-2px)}
+
+/* CALENDAR */
+.tz-note{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 16px;
+  background:var(--pane);border:1px solid var(--rim);
+  border-radius:10px;
+  font-family:var(--mono);font-size:0.72rem;
+  color:var(--off);letter-spacing:0.04em;
+  margin-bottom:24px;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.tz-note svg{width:14px;height:14px;stroke:var(--gold-soft);fill:none;stroke-width:1.5;flex-shrink:0}
+.tz-note b{color:var(--white);font-weight:600}
+
+.cal-head{
+  font-family:var(--mono);font-size:0.68rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);
+  margin-bottom:14px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.cal-head b{color:var(--off);font-weight:500}
+
+.days{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+  margin-bottom:28px;
+}
+.day{
+  position:relative;
+  padding:16px 10px;
+  background:rgba(0,0,0,0.25);border:1px solid var(--rim);
+  border-radius:12px;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  transition:all .25s;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.day:hover:not(:disabled){border-color:var(--rim2);background:rgba(0,0,0,0.4);transform:translateY(-2px)}
+.day.selected{
+  border-color:var(--gold-rim);
+  background:linear-gradient(180deg,rgba(245,181,68,0.14),rgba(245,181,68,0.03));
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 0 1px var(--gold-rim), 0 8px 24px -4px rgba(245,181,68,0.3);
+}
+.day-name{
+  font-family:var(--mono);font-size:0.62rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);
+}
+.day.selected .day-name{color:var(--gold-soft)}
+.day-num{
+  font-family:var(--display);font-weight:500;
+  font-size:1.7rem;line-height:1;letter-spacing:-0.02em;
+  color:var(--white);
+}
+.day-mo{
+  font-family:var(--mono);font-size:0.58rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);
+}
+
+/* TIME SLOTS */
+.slots-wrap{
+  opacity:0;max-height:0;overflow:hidden;
+  transition:opacity .35s ease, max-height .4s ease;
+}
+.slots-wrap.show{opacity:1;max-height:600px}
+.slots-head{
+  font-family:var(--mono);font-size:0.68rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);
+  margin-bottom:14px;padding-top:18px;
+  border-top:1px solid var(--rim);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.slots-head b{color:var(--gold-soft);font-weight:500}
+.slots{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));
+  gap:8px;
+}
+.slot{
+  padding:11px 10px;
+  background:rgba(0,0,0,0.25);border:1px solid var(--rim);
+  border-radius:8px;
+  font-family:var(--mono);font-size:0.78rem;font-weight:500;
+  color:var(--off);letter-spacing:0.01em;
+  transition:all .2s;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.slot:hover:not(:disabled){border-color:var(--blue-rim);color:var(--white);background:rgba(71,151,255,0.06)}
+.slot.selected{
+  border-color:var(--blue-rim);color:var(--white);
+  background:linear-gradient(180deg,rgba(71,151,255,0.14),rgba(71,151,255,0.03));
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 0 1px var(--blue-rim), 0 0 16px -4px rgba(71,151,255,0.4);
+}
+.slot:disabled{opacity:0.35;cursor:not-allowed;text-decoration:line-through}
+
+/* REVIEW */
+.review-grid{display:flex;flex-direction:column;gap:16px}
+.review-block{
+  padding:20px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));
+  border:1px solid var(--rim);
+  border-radius:14px;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.review-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:14px;padding-bottom:12px;
+  border-bottom:1px dashed var(--rim);
+}
+.review-head-title{
+  font-family:var(--mono);font-size:0.66rem;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);
+  display:flex;align-items:center;gap:10px;
+}
+.review-head-title::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.review-head-title.gold::before{background:var(--gold)}
+.review-head-title.green::before{background:var(--green)}
+.review-edit{
+  font-family:var(--mono);font-size:0.66rem;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);
+  transition:color .2s;
+}
+.review-edit:hover{color:var(--white)}
+.review-rows{display:flex;flex-direction:column;gap:10px}
+.review-row{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
+  font-size:0.9rem;
+}
+.review-row-k{color:var(--muted);font-size:0.82rem}
+.review-row-v{color:var(--white);font-weight:500;text-align:right;max-width:60%;word-break:break-word}
+.review-row-v .empty{color:var(--dim);font-weight:400;font-style:italic;font-size:0.82rem}
+
+.review-booking{
+  display:flex;align-items:center;gap:18px;
+  padding:22px;
+  background:linear-gradient(135deg,rgba(245,181,68,0.08),rgba(71,151,255,0.06));
+  border:1px solid var(--gold-rim);
+  border-radius:14px;
+}
+.review-booking-ic{
+  width:48px;height:48px;border-radius:12px;flex-shrink:0;
+  background:var(--gold-dim);border:1px solid var(--gold-rim);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.review-booking-ic svg{width:22px;height:22px;stroke:var(--gold-soft);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.review-booking-txt{flex:1}
+.review-booking-label{
+  font-family:var(--mono);font-size:0.62rem;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-soft);
+  margin-bottom:4px;
+}
+.review-booking-val{
+  font-family:var(--display);font-weight:500;font-size:1.15rem;
+  letter-spacing:-0.015em;line-height:1.3;color:var(--white);
+}
+
+/* SUBMIT STATE */
+.submit-note{
+  margin-top:20px;
+  font-family:var(--mono);font-size:0.68rem;
+  color:var(--dim);letter-spacing:0.04em;
+  text-align:center;
+}
+
+/* SUCCESS / ERROR */
+.result{display:none;text-align:center;padding:20px 0}
+.result.active{display:block}
+.result-ic{
+  width:72px;height:72px;margin:0 auto 24px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--green-dim);border:1px solid var(--green-rim);
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 40px -10px rgba(52,211,153,0.4);
+  animation:popin .5s cubic-bezier(.34,1.56,.64,1) both;
+}
+.result.error .result-ic{
+  background:var(--red-dim);border-color:var(--red-rim);
+  box-shadow:inset 0 1px 0 var(--rim-top), 0 0 40px -10px rgba(248,113,113,0.4);
+}
+.result-ic svg{width:32px;height:32px;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.result.error .result-ic svg{stroke:var(--red)}
+@keyframes popin{from{transform:scale(0.5);opacity:0}to{transform:scale(1);opacity:1}}
+.result h2{
+  font-family:var(--display);font-weight:500;
+  font-size:2rem;letter-spacing:-0.025em;line-height:1.1;
+  margin-bottom:16px;
+  font-variation-settings:'opsz' 80;
+}
+.result h2 em{
+  font-style:italic;font-weight:400;
+  background:linear-gradient(95deg,var(--gold-soft),var(--blue-mist));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.result p{color:var(--muted);font-size:1rem;line-height:1.7;max-width:480px;margin:0 auto 28px}
+.result-booking-card{
+  display:inline-flex;align-items:center;gap:14px;
+  padding:16px 22px;margin:0 auto 28px;
+  background:linear-gradient(135deg,rgba(245,181,68,0.1),rgba(71,151,255,0.06));
+  border:1px solid var(--gold-rim);
+  border-radius:100px;
+  font-family:var(--mono);font-size:0.82rem;
+}
+.result-booking-card span:first-child{
+  width:8px;height:8px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 8px var(--gold);
+}
+.result-booking-card b{color:var(--white);font-weight:600}
+.result-next{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  max-width:520px;margin:32px auto 0;
+}
+.result-next-card{
+  padding:16px 14px;
+  background:var(--pane);border:1px solid var(--rim);
+  border-radius:12px;
+  text-align:left;
+  box-shadow:inset 0 1px 0 var(--rim-top);
+}
+.result-next-n{
+  font-family:var(--mono);font-size:0.62rem;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-2);
+  margin-bottom:8px;
+}
+.result-next-t{
+  font-family:var(--display);font-weight:500;font-size:0.9rem;
+  letter-spacing:-0.01em;margin-bottom:4px;
+}
+.result-next-d{font-size:0.76rem;color:var(--muted);line-height:1.5}
+
+.spinner{
+  width:14px;height:14px;border-radius:50%;
+  border:2px solid rgba(0,0,0,0.2);border-top-color:var(--void);
+  animation:spin .7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* FOOTER */
+footer{
+  background:var(--void);
+  border-top:1px solid var(--rim);
+  padding:32px;
+  position:relative;z-index:3;
+  margin-top:auto;
+}
+.foot{
+  max-width:1080px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:0.7rem;color:var(--dim);letter-spacing:0.04em;
+}
+.foot-links{display:flex;gap:24px;flex-wrap:wrap}
+.foot-links a{color:var(--dim);transition:color .2s}
+.foot-links a:hover{color:var(--white)}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .wrap{padding:40px 20px 60px}
+  .panel{padding:28px 22px;border-radius:20px}
+  .row{grid-template-columns:1fr}
+  .days{grid-template-columns:repeat(5,1fr);gap:6px}
+  .day{padding:12px 6px}
+  .day-num{font-size:1.4rem}
+  .day-name,.day-mo{font-size:0.58rem}
+  .stepper{max-width:100%}
+  .step-label{font-size:0.58rem}
+  .step-dot{width:28px;height:28px;font-size:0.68rem}
+  .step-nav{flex-direction:column-reverse;align-items:stretch;gap:10px}
+  .btn-prim,.btn-ghost{width:100%;justify-content:center}
+  .result-next{grid-template-columns:1fr}
+  .foot{flex-direction:column;align-items:flex-start;gap:14px}
+  .site-header{padding:0 20px}
+  footer{padding:24px 20px}
+  .review-booking{flex-direction:column;text-align:center;gap:14px}
+  .review-row{flex-direction:column;gap:4px}
+  .review-row-v{text-align:left;max-width:100%}
+  .chips{grid-template-columns:1fr 1fr}
+}
+@media(max-width:440px){
+  .slots{grid-template-columns:repeat(2,1fr)}
+  .intro h1{font-size:1.8rem}
+  .step-title{font-size:1.35rem}
+  .step-label{display:none}
+  .logo img{height:24px}
+  .logo-tag{font-size:0.6rem;padding-left:10px;letter-spacing:0.12em}
+  .back-link span{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-mesh"></div>
+<div class="bg-grid"></div>
+<div class="bg-grain"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <img src="https://github.com/buckleydigital/ql-site/raw/main/quoteleads-logo-white.png" alt="QuoteLeads">
+      <span class="logo-tag">Solar</span>
+    </a>
+    <a href="/" class="back-link">
+      <svg viewBox="0 0 12 12" fill="none"><path d="M10 6H2M5 3L2 6l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Back to site</span>
+    </a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- INTRO -->
+  <div class="intro" id="intro">
+    <div class="intro-badge">
+      <span class="intro-badge-dot"></span>
+      <span>Taking <b>5 new projects</b> per month</span>
+    </div>
+    <h1>Book your <em>solar strategy call.</em></h1>
+    <p>20 minutes with the QuoteLeads team. We'll audit your current setup, identify where installs are leaking, and map out whether <b>Foundation, Growth, or Enterprise</b> fits your volume target.</p>
+  </div>
+
+  <!-- STEPPER -->
+  <div class="stepper" id="stepper">
+    <div class="step-node active" data-step="1">
+      <div class="step-dot">
+        <span>1</span>
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="step-label">Your details</div>
+    </div>
+    <div class="step-line" data-line="1"></div>
+    <div class="step-node" data-step="2">
+      <div class="step-dot">
+        <span>2</span>
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="step-label">Pick a time</div>
+    </div>
+    <div class="step-line" data-line="2"></div>
+    <div class="step-node" data-step="3">
+      <div class="step-dot">
+        <span>3</span>
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="step-label">Confirm</div>
+    </div>
+  </div>
+
+  <!-- PANEL -->
+  <div class="panel" id="panel">
+
+    <!-- ===== STEP 1: SURVEY ===== -->
+    <section class="step active" data-step="1">
+      <div class="step-head">
+        <div class="step-eyebrow">Step 01 · About You</div>
+        <h2 class="step-title">Tell us about your solar business.</h2>
+        <p class="step-sub">Takes 90 seconds. Helps us come to the call prepared with ideas specific to your situation — not generic talking points.</p>
+      </div>
+
+      <div class="group">
+        <div class="group-title">Contact</div>
+        <div class="row">
+          <div class="field">
+            <label>Full name <span class="req">*</span></label>
+            <input type="text" id="f-name" placeholder="Jane Smith" autocomplete="name">
+            <div class="field-err">Please enter your name</div>
+          </div>
+          <div class="field">
+            <label>Business name <span class="req">*</span></label>
+            <input type="text" id="f-business" placeholder="Apex Solar Australia" autocomplete="organization">
+            <div class="field-err">Please enter your business name</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" id="f-email" placeholder="jane@apexsolar.com.au" autocomplete="email">
+            <div class="field-err">Enter a valid email</div>
+          </div>
+          <div class="field">
+            <label>Phone <span class="req">*</span></label>
+            <input type="tel" id="f-phone" placeholder="0400 000 000" autocomplete="tel">
+            <div class="field-err">Please enter your phone number</div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Current website <span class="opt">Optional</span></label>
+          <input type="url" id="f-website" placeholder="apexsolar.com.au">
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-title">The Business</div>
+        <div class="row">
+          <div class="field">
+            <label>State <span class="req">*</span></label>
+            <select id="f-state">
+              <option value="">Select state…</option>
+              <option value="NSW">New South Wales</option>
+              <option value="VIC">Victoria</option>
+              <option value="QLD">Queensland</option>
+              <option value="SA">South Australia</option>
+              <option value="WA">Western Australia</option>
+              <option value="TAS">Tasmania</option>
+              <option value="ACT">ACT</option>
+              <option value="NT">Northern Territory</option>
+            </select>
+            <div class="field-err">Please select a state</div>
+          </div>
+          <div class="field">
+            <label>Installs per month <span class="req">*</span></label>
+            <select id="f-installs">
+              <option value="">Select range…</option>
+              <option value="Fewer than 5">Fewer than 5</option>
+              <option value="5–15">5–15</option>
+              <option value="15–30">15–30</option>
+              <option value="30+">30+</option>
+            </select>
+            <div class="field-err">Please select a range</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-title">Biggest Challenge Right Now <span style="color:var(--gold-soft)">*</span></div>
+        <div class="chips cols-2" data-chips="challenge">
+          <button type="button" class="chip" data-val="Not enough leads">
+            <span class="chip-sub">01</span>
+            <span class="chip-label">Not enough leads</span>
+          </button>
+          <button type="button" class="chip" data-val="Leads too low quality">
+            <span class="chip-sub">02</span>
+            <span class="chip-label">Leads too low quality</span>
+          </button>
+          <button type="button" class="chip" data-val="Too dependent on marketplaces">
+            <span class="chip-sub">03</span>
+            <span class="chip-label">Marketplace dependency</span>
+          </button>
+          <button type="button" class="chip" data-val="Current site not converting">
+            <span class="chip-sub">04</span>
+            <span class="chip-label">Site not converting</span>
+          </button>
+        </div>
+        <div class="field-err" id="err-challenge">Please pick one</div>
+      </div>
+
+      <div class="group">
+        <div class="group-title">Which Package Fits <span style="color:var(--gold-soft)">*</span></div>
+        <div class="chips" data-chips="package">
+          <button type="button" class="chip" data-val="Foundation ($1,250)">
+            <span class="chip-sub">01 · $1,250</span>
+            <span class="chip-label">Foundation</span>
+          </button>
+          <button type="button" class="chip" data-val="Growth ($2,500)">
+            <span class="chip-sub">02 · $2,500</span>
+            <span class="chip-label">Growth</span>
+          </button>
+          <button type="button" class="chip" data-val="Enterprise (Custom)">
+            <span class="chip-sub">03 · Custom</span>
+            <span class="chip-label">Enterprise</span>
+          </button>
+          <button type="button" class="chip" data-val="Not sure yet">
+            <span class="chip-sub">?</span>
+            <span class="chip-label">Not sure yet</span>
+          </button>
+        </div>
+        <div class="field-err" id="err-package">Please pick one</div>
+      </div>
+
+      <div class="group">
+        <div class="group-title">Timeline <span style="color:var(--gold-soft)">*</span></div>
+        <div class="chips" data-chips="timeline">
+          <button type="button" class="chip" data-val="Ready now">
+            <span class="chip-sub">Now</span>
+            <span class="chip-label">Ready to go</span>
+          </button>
+          <button type="button" class="chip" data-val="Next 30 days">
+            <span class="chip-sub">30d</span>
+            <span class="chip-label">Next 30 days</span>
+          </button>
+          <button type="button" class="chip" data-val="Next 90 days">
+            <span class="chip-sub">90d</span>
+            <span class="chip-label">Next 90 days</span>
+          </button>
+          <button type="button" class="chip" data-val="Just exploring">
+            <span class="chip-sub">—</span>
+            <span class="chip-label">Just exploring</span>
+          </button>
+        </div>
+        <div class="field-err" id="err-timeline">Please pick one</div>
+      </div>
+
+      <div class="step-nav">
+        <span></span>
+        <button type="button" class="btn-prim" data-action="next">
+          Continue
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== STEP 2: CALENDAR ===== -->
+    <section class="step" data-step="2">
+      <div class="step-head">
+        <div class="step-eyebrow gold">Step 02 · Pick Your Time</div>
+        <h2 class="step-title">When works for the call?</h2>
+        <p class="step-sub">20-minute strategy call, Monday to Friday, 10:00 AM to 2:00 PM. Pick any date and time that suits.</p>
+      </div>
+
+      <div class="tz-note">
+        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>All times shown in <b>Australian Eastern Time</b> — <span id="tz-label">AEST</span> (UTC<span id="tz-offset">+10:00</span>)</span>
+      </div>
+
+      <div class="cal-head">
+        <span>Available days</span>
+        <span><b id="cal-range"></b></span>
+      </div>
+      <div class="days" id="days"></div>
+
+      <div class="slots-wrap" id="slotsWrap">
+        <div class="slots-head">
+          <span>Available times — <b id="slots-day-label"></b></span>
+          <span><span id="slots-count">9</span> slots</span>
+        </div>
+        <div class="slots" id="slots"></div>
+      </div>
+
+      <div class="step-nav">
+        <button type="button" class="btn-ghost" data-action="back">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M10 6H2M5 3L2 6l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back
+        </button>
+        <button type="button" class="btn-prim" data-action="next" disabled>
+          Review Booking
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== STEP 3: REVIEW ===== -->
+    <section class="step" data-step="3">
+      <div class="step-head">
+        <div class="step-eyebrow">Step 03 · Confirm</div>
+        <h2 class="step-title">Quick review before we lock it in.</h2>
+        <p class="step-sub">Double-check your details. We'll send a calendar invite to the email below with a Google Meet link.</p>
+      </div>
+
+      <div class="review-grid">
+
+        <!-- Booking highlight -->
+        <div class="review-booking">
+          <div class="review-booking-ic">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="review-booking-txt">
+            <div class="review-booking-label">Your 20-min strategy call</div>
+            <div class="review-booking-val" id="r-booking">—</div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="review-block">
+          <div class="review-head">
+            <div class="review-head-title">Contact</div>
+            <button type="button" class="review-edit" data-goto="1">Edit</button>
+          </div>
+          <div class="review-rows">
+            <div class="review-row"><span class="review-row-k">Name</span><span class="review-row-v" id="r-name">—</span></div>
+            <div class="review-row"><span class="review-row-k">Business</span><span class="review-row-v" id="r-business">—</span></div>
+            <div class="review-row"><span class="review-row-k">Email</span><span class="review-row-v" id="r-email">—</span></div>
+            <div class="review-row"><span class="review-row-k">Phone</span><span class="review-row-v" id="r-phone">—</span></div>
+            <div class="review-row"><span class="review-row-k">Website</span><span class="review-row-v" id="r-website"><span class="empty">None provided</span></span></div>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div class="review-block">
+          <div class="review-head">
+            <div class="review-head-title gold">Business</div>
+            <button type="button" class="review-edit" data-goto="1">Edit</button>
+          </div>
+          <div class="review-rows">
+            <div class="review-row"><span class="review-row-k">State</span><span class="review-row-v" id="r-state">—</span></div>
+            <div class="review-row"><span class="review-row-k">Installs / month</span><span class="review-row-v" id="r-installs">—</span></div>
+            <div class="review-row"><span class="review-row-k">Biggest challenge</span><span class="review-row-v" id="r-challenge">—</span></div>
+            <div class="review-row"><span class="review-row-k">Package interest</span><span class="review-row-v" id="r-package">—</span></div>
+            <div class="review-row"><span class="review-row-k">Timeline</span><span class="review-row-v" id="r-timeline">—</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="step-nav">
+        <button type="button" class="btn-ghost" data-action="back">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M10 6H2M5 3L2 6l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back
+        </button>
+        <button type="button" class="btn-prim" id="submitBtn" data-action="submit">
+          <span id="submitTxt">Confirm Booking</span>
+          <svg viewBox="0 0 16 16" fill="currentColor" id="submitIc"><polyline points="4 8 7 11 12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </button>
+      </div>
+
+      <div class="submit-note">By booking, you agree to receive a confirmation email. No marketing. No spam.</div>
+    </section>
+
+    <!-- ===== SUCCESS ===== -->
+    <div class="result success" id="success">
+      <div class="result-ic">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h2>Call <em>confirmed.</em></h2>
+      <div class="result-booking-card">
+        <span></span>
+        <span id="success-datetime">—</span>
+      </div>
+      <p>A calendar invite has been sent to <b id="success-email">—</b> with a Google Meet link. If you don't see it in the next few minutes, check your promotions folder.</p>
+
+      <div class="result-next">
+        <div class="result-next-card">
+          <div class="result-next-n">Next · 01</div>
+          <div class="result-next-t">Check your email</div>
+          <div class="result-next-d">Calendar invite + prep questions arriving shortly</div>
+        </div>
+        <div class="result-next-card">
+          <div class="result-next-n">Next · 02</div>
+          <div class="result-next-t">We prep for you</div>
+          <div class="result-next-d">Quick audit of your current site + market before we call</div>
+        </div>
+        <div class="result-next-card">
+          <div class="result-next-n">Next · 03</div>
+          <div class="result-next-t">20 mins, that's it</div>
+          <div class="result-next-d">Clear recommendations. No hard sell. No slide deck.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ERROR ===== -->
+    <div class="result error" id="error">
+      <div class="result-ic">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h2>Something went <em>wrong.</em></h2>
+      <p>We couldn't submit your booking. Please try again — if it keeps failing, email us directly at <b>contact@quoteleads.com.au</b> and we'll lock in your time manually.</p>
+      <button type="button" class="btn-prim" id="retryBtn" style="margin:0 auto">
+        Try again
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+      </button>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div>© 2026 QuoteLeads · Australian owned and operated</div>
+    <div class="foot-links">
+      <a href="https://quoteleads.com.au/privacy">Privacy</a>
+      <a href="https://quoteleads.com.au/terms">Terms</a>
+      <a href="mailto:contact@quoteleads.com.au">contact@quoteleads.com.au</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================
+   CONFIG
+   ============================================ */
+const WEBHOOK_URL = 'https://hook.eu2.make.com/zp3qqp2uxwtnhkohieered5b469hw346';
+const BOOKING_WINDOW_DAYS = 14;          // look ahead 14 calendar days
+const BOOKING_DAYS_COUNT = 10;           // show up to 10 business days
+const TIME_START_MIN = 10 * 60;          // 10:00 AM
+const TIME_END_MIN   = 14 * 60;          // 2:00 PM (last slot)
+const SLOT_LEN_MIN   = 30;
+const MIN_LEAD_HOURS = 2;                // can't book a slot less than 2 hours out
+
+/* ============================================
+   STATE
+   ============================================ */
+const state = {
+  step: 1,
+  contact: { name:'', email:'', phone:'', businessName:'', currentWebsite:'' },
+  qualification: { state:'', installsPerMonth:'', biggestChallenge:'', packageInterest:'', timeline:'' },
+  booking: { date:null, time:null }, // date = Date obj @ midnight local, time = "HH:MM"
+};
+
+/* ============================================
+   TIMEZONE UTILS — Australia/Sydney
+   ============================================ */
+function ausTz(date) {
+  // Australian DST: starts 1st Sun of Oct, ends 1st Sun of Apr
+  const y = date.getFullYear();
+  const firstSunOf = (mo) => {
+    const d = new Date(Date.UTC(y, mo, 1));
+    const day = d.getUTCDay();
+    const add = (7 - day) % 7;
+    return new Date(Date.UTC(y, mo, 1 + add));
+  };
+  const dstStart = firstSunOf(9);  // October
+  const dstEnd   = firstSunOf(3);  // April
+  const inDst = (date >= dstStart || date < dstEnd);
+  return {
+    label: inDst ? 'AEDT' : 'AEST',
+    offsetMin: inDst ? 660 : 600,
+    offsetStr: inDst ? '+11:00' : '+10:00',
+  };
+}
+
+function fmtDay(date, opts = {}) {
+  return date.toLocaleDateString('en-AU', { weekday: opts.long ? 'long' : 'short', day: 'numeric', month: 'short', ...(opts.year?{year:'numeric'}:{}) });
+}
+
+function fmtTime12(hhmm) {
+  const [h, m] = hhmm.split(':').map(Number);
+  const per = h >= 12 ? 'PM' : 'AM';
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return `${h12}:${m.toString().padStart(2,'0')} ${per}`;
+}
+
+function isoDateTime(date, hhmm) {
+  // Build an ISO string anchored to Australia/Sydney
+  const tz = ausTz(date);
+  const yyyy = date.getFullYear();
+  const mm = (date.getMonth()+1).toString().padStart(2,'0');
+  const dd = date.getDate().toString().padStart(2,'0');
+  return `${yyyy}-${mm}-${dd}T${hhmm}:00${tz.offsetStr}`;
+}
+
+function fmtDateKey(date) {
+  return `${date.getFullYear()}-${(date.getMonth()+1).toString().padStart(2,'0')}-${date.getDate().toString().padStart(2,'0')}`;
+}
+
+/* ============================================
+   STEP NAVIGATION
+   ============================================ */
+function goStep(n) {
+  state.step = n;
+  document.querySelectorAll('.step').forEach(s => {
+    s.classList.toggle('active', Number(s.dataset.step) === n);
+  });
+  document.querySelectorAll('.step-node').forEach(node => {
+    const i = Number(node.dataset.step);
+    node.classList.toggle('active', i === n);
+    node.classList.toggle('done', i < n);
+  });
+  document.querySelectorAll('.step-line').forEach(line => {
+    const i = Number(line.dataset.line);
+    line.classList.toggle('done', i < n);
+  });
+  window.scrollTo({ top: document.getElementById('panel').offsetTop - 80, behavior: 'smooth' });
+}
+
+/* ============================================
+   STEP 1 — SURVEY
+   ============================================ */
+// chip select
+document.querySelectorAll('[data-chips]').forEach(group => {
+  const key = group.dataset.chips;
+  group.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      group.querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+      chip.classList.add('selected');
+      const map = { challenge:'biggestChallenge', package:'packageInterest', timeline:'timeline' };
+      state.qualification[map[key]] = chip.dataset.val;
+      document.getElementById(`err-${key}`).parentElement.classList.remove('err');
+      document.getElementById(`err-${key}`).style.display = 'none';
+    });
+  });
+});
+
+function validateStep1() {
+  let ok = true;
+  const inputs = [
+    { id:'f-name', key:'name', group:'contact' },
+    { id:'f-business', key:'businessName', group:'contact' },
+    { id:'f-email', key:'email', group:'contact', email:true },
+    { id:'f-phone', key:'phone', group:'contact' },
+    { id:'f-state', key:'state', group:'qualification' },
+    { id:'f-installs', key:'installsPerMonth', group:'qualification' },
+  ];
+  inputs.forEach(f => {
+    const el = document.getElementById(f.id);
+    const wrap = el.closest('.field');
+    const val = el.value.trim();
+    let valid = !!val;
+    if (valid && f.email) valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    if (!valid) { wrap.classList.add('err'); ok = false; }
+    else { wrap.classList.remove('err'); state[f.group][f.key] = val; }
+  });
+  // website optional but capture
+  state.contact.currentWebsite = document.getElementById('f-website').value.trim();
+
+  // chips
+  ['challenge','package','timeline'].forEach(k => {
+    const map = { challenge:'biggestChallenge', package:'packageInterest', timeline:'timeline' };
+    if (!state.qualification[map[k]]) {
+      document.getElementById(`err-${k}`).style.display = 'block';
+      ok = false;
+    }
+  });
+  return ok;
+}
+
+/* ============================================
+   STEP 2 — CALENDAR
+   ============================================ */
+function buildDays() {
+  const container = document.getElementById('days');
+  container.innerHTML = '';
+  const now = new Date();
+  const days = [];
+  let d = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let scanned = 0;
+  while (days.length < BOOKING_DAYS_COUNT && scanned < BOOKING_WINDOW_DAYS + 7) {
+    const dow = d.getDay();
+    if (dow !== 0 && dow !== 6) days.push(new Date(d));
+    d.setDate(d.getDate() + 1);
+    scanned++;
+  }
+
+  // range label
+  if (days.length) {
+    const first = days[0], last = days[days.length-1];
+    document.getElementById('cal-range').textContent =
+      `${first.toLocaleDateString('en-AU',{day:'numeric',month:'short'})} → ${last.toLocaleDateString('en-AU',{day:'numeric',month:'short'})}`;
+  }
+
+  days.forEach(date => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'day';
+    btn.dataset.key = fmtDateKey(date);
+    btn.innerHTML = `
+      <span class="day-name">${date.toLocaleDateString('en-AU',{weekday:'short'})}</span>
+      <span class="day-num">${date.getDate()}</span>
+      <span class="day-mo">${date.toLocaleDateString('en-AU',{month:'short'})}</span>
+    `;
+    btn.addEventListener('click', () => pickDay(date, btn));
+    container.appendChild(btn);
+  });
+
+  // update tz label from today
+  const tz = ausTz(new Date());
+  document.getElementById('tz-label').textContent = tz.label;
+  document.getElementById('tz-offset').textContent = tz.offsetStr.replace(':00','').replace('+','+') + ':00';
+}
+
+function pickDay(date, btn) {
+  document.querySelectorAll('.day').forEach(d => d.classList.remove('selected'));
+  btn.classList.add('selected');
+  state.booking.date = date;
+  state.booking.time = null;
+  buildSlots(date);
+  document.getElementById('slots-day-label').textContent = date.toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long'});
+  document.getElementById('slotsWrap').classList.add('show');
+  checkStep2Ready();
+}
+
+function buildSlots(date) {
+  const container = document.getElementById('slots');
+  container.innerHTML = '';
+  const now = new Date();
+  const isToday = date.toDateString() === now.toDateString();
+  const cutoffMin = isToday ? (now.getHours() * 60 + now.getMinutes() + MIN_LEAD_HOURS * 60) : -1;
+
+  let count = 0;
+  for (let m = TIME_START_MIN; m <= TIME_END_MIN; m += SLOT_LEN_MIN) {
+    const hh = Math.floor(m / 60).toString().padStart(2,'0');
+    const mm = (m % 60).toString().padStart(2,'0');
+    const hhmm = `${hh}:${mm}`;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'slot';
+    btn.textContent = fmtTime12(hhmm);
+    btn.dataset.time = hhmm;
+    if (m < cutoffMin) btn.disabled = true;
+    else count++;
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      document.querySelectorAll('.slot').forEach(s => s.classList.remove('selected'));
+      btn.classList.add('selected');
+      state.booking.time = hhmm;
+      checkStep2Ready();
+    });
+    container.appendChild(btn);
+  }
+  document.getElementById('slots-count').textContent = count;
+}
+
+function checkStep2Ready() {
+  const btn = document.querySelector('.step[data-step="2"] [data-action="next"]');
+  btn.disabled = !(state.booking.date && state.booking.time);
+}
+
+/* ============================================
+   STEP 3 — REVIEW
+   ============================================ */
+function fillReview() {
+  const c = state.contact, q = state.qualification, b = state.booking;
+  document.getElementById('r-name').textContent = c.name || '—';
+  document.getElementById('r-business').textContent = c.businessName || '—';
+  document.getElementById('r-email').textContent = c.email || '—';
+  document.getElementById('r-phone').textContent = c.phone || '—';
+  document.getElementById('r-website').innerHTML = c.currentWebsite
+    ? c.currentWebsite
+    : '<span class="empty">None provided</span>';
+  document.getElementById('r-state').textContent = q.state || '—';
+  document.getElementById('r-installs').textContent = q.installsPerMonth || '—';
+  document.getElementById('r-challenge').textContent = q.biggestChallenge || '—';
+  document.getElementById('r-package').textContent = q.packageInterest || '—';
+  document.getElementById('r-timeline').textContent = q.timeline || '—';
+
+  if (b.date && b.time) {
+    const tz = ausTz(b.date);
+    const dateStr = b.date.toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+    document.getElementById('r-booking').textContent = `${dateStr} at ${fmtTime12(b.time)} ${tz.label}`;
+  }
+}
+
+/* ============================================
+   SUBMIT
+   ============================================ */
+async function submitBooking() {
+  const submitBtn = document.getElementById('submitBtn');
+  const submitTxt = document.getElementById('submitTxt');
+  const submitIc = document.getElementById('submitIc');
+  submitBtn.disabled = true;
+  submitTxt.textContent = 'Submitting…';
+  submitIc.outerHTML = '<span class="spinner" id="submitIc"></span>';
+
+  const b = state.booking;
+  const tz = ausTz(b.date);
+  const iso = isoDateTime(b.date, b.time);
+  const displayDateTime = `${b.date.toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long',year:'numeric'})} at ${fmtTime12(b.time)} ${tz.label}`;
+
+  const payload = {
+    submittedAt: new Date().toISOString(),
+    source: 'solar-sites.quoteleads.com.au/book-a-call',
+    contact: {
+      fullName: state.contact.name,
+      email: state.contact.email,
+      phone: state.contact.phone,
+      businessName: state.contact.businessName,
+      currentWebsite: state.contact.currentWebsite || null,
+    },
+    qualification: {
+      state: state.qualification.state,
+      installsPerMonth: state.qualification.installsPerMonth,
+      biggestChallenge: state.qualification.biggestChallenge,
+      packageInterest: state.qualification.packageInterest,
+      timeline: state.qualification.timeline,
+    },
+    booking: {
+      date: fmtDateKey(b.date),
+      time: b.time,
+      timezone: 'Australia/Sydney',
+      timezoneLabel: tz.label,
+      timezoneOffset: tz.offsetStr,
+      isoDateTime: iso,
+      displayDateTime: displayDateTime,
+    },
+  };
+
+  try {
+    const res = await fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    showSuccess(displayDateTime, state.contact.email);
+  } catch (err) {
+    console.error('Booking submission failed:', err);
+    showError();
+  }
+}
+
+function showSuccess(displayDateTime, email) {
+  document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+  document.getElementById('stepper').style.display = 'none';
+  document.getElementById('intro').style.display = 'none';
+  document.getElementById('error').classList.remove('active');
+  document.getElementById('success').classList.add('active');
+  document.getElementById('success-datetime').innerHTML = `<b>${displayDateTime}</b>`;
+  document.getElementById('success-email').textContent = email;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showError() {
+  document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+  document.getElementById('error').classList.add('active');
+  // Reset submit button state
+  const submitBtn = document.getElementById('submitBtn');
+  submitBtn.disabled = false;
+  document.getElementById('submitIc')?.remove?.();
+  submitBtn.innerHTML = '<span id="submitTxt">Confirm Booking</span><svg viewBox="0 0 16 16" fill="none" id="submitIc"><polyline points="4 8 7 11 12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+}
+
+document.getElementById('retryBtn').addEventListener('click', () => {
+  document.getElementById('error').classList.remove('active');
+  goStep(3);
+});
+
+/* ============================================
+   WIRE UP
+   ============================================ */
+document.querySelectorAll('[data-action="next"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (state.step === 1) {
+      if (!validateStep1()) return;
+      goStep(2);
+      buildDays();
+    } else if (state.step === 2) {
+      if (!state.booking.date || !state.booking.time) return;
+      fillReview();
+      goStep(3);
+    }
+  });
+});
+
+document.querySelectorAll('[data-action="back"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    goStep(state.step - 1);
+  });
+});
+
+document.querySelectorAll('[data-goto]').forEach(btn => {
+  btn.addEventListener('click', () => goStep(Number(btn.dataset.goto)));
+});
+
+document.getElementById('submitBtn').addEventListener('click', submitBooking);
+
+// Clear error state on input
+document.querySelectorAll('input, select').forEach(el => {
+  el.addEventListener('input', () => el.closest('.field')?.classList.remove('err'));
+  el.addEventListener('change', () => el.closest('.field')?.classList.remove('err'));
+});
+
+// Initial tz labels
+const initTz = ausTz(new Date());
+document.getElementById('tz-label').textContent = initTz.label;
+document.getElementById('tz-offset').textContent = initTz.offsetStr.replace(':00','') + ':00';
+</script>
+
+</body>
+</html>
